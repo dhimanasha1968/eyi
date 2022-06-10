@@ -16,6 +16,7 @@
         &.selected,
         &:hover {
             border-top: $eyi-size-5x solid $eyi-primary;
+            color: $eyi-primary;
         }
     }
 
@@ -31,11 +32,21 @@
         max-height: 0;
         transition: max-height 0.15s ease-out;
         overflow: hidden;
-        background: #d5d5d5;
+        background: $eyi-white;
 
         &.active {
-            max-height: 100%;
+            max-height: 9999px;
             transition: max-height 0.25s ease-in;
+        }
+
+        .eyi-responsive-menu-item {
+            &.eyi-responsive-menu-last-item {
+                border-bottom: $eyi-size-1x solid $eyi-light-gray;
+            }
+            &:hover {
+                color: $eyi-primary;
+            }
         }
     }
 }
+

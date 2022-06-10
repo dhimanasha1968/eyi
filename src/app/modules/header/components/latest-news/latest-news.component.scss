@@ -1,0 +1,14 @@
+@import '../../../../../assets/styles/typography';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-latest-news-icon {
+        border-radius: $eyi-size-25x;
+        height: $eyi-size-50x;
+        width: $eyi-size-50x;
+    }
+
+    .eyi-news-time {
+        font-size: $eyi-font-size-xs;
+    }
+}

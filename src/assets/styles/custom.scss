@@ -1,3 +1,5 @@
+@import './variables';
+
 .text-underline-hover {
     text-decoration: none;
 
@@ -6,8 +8,7 @@
     }
 }
 
-.btn {
-    &:focus {
-        box-shadow: none;
-    }
+.eyi-cross-icon {
+    right: $eyi-size-10x;
+    top: $eyi-size-10x;
 }

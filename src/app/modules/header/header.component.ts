@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
-import { NavItems } from './models';
+import { HeaderContent, NavItems } from './models';
 
 @Component({
   selector: 'eyi-header',
@@ -35,8 +36,33 @@ export class HeaderComponent implements OnInit {
     }
   ];
   isResponsiveMenuExpanded = false;
+  headerContent: HeaderContent = {
+    sideDrawerTitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    sideDrawerImages: [
+      './assets/images/dummy_image.jpg',
+      './assets/images/dummy_image.jpg',
+      './assets/images/dummy_image.jpg'
+    ],
+    latestNews: [
+      {
+        icon: './assets/images/dummy_image.jpg',
+        title: 'Work Hard',
+        time: 'November 25, 2020'
+      },
+      {
+        icon: './assets/images/dummy_image.jpg',
+        title: 'Be Awesome Today!',
+        time: 'November 20, 2020'
+      },
+      {
+        icon: './assets/images/dummy_image.jpg',
+        title: 'Set Goals. Reach.',
+        time: 'November 12, 2022'
+      }
+    ]
+  };
 
-  constructor(private offcanvasService: NgbOffcanvas) { }
+  constructor(private offcanvasService: NgbOffcanvas, private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -45,7 +71,12 @@ export class HeaderComponent implements OnInit {
     this.offcanvasService.open(content, { position: 'end' });
   }
 
-  openResponsiveDrawer(): void {
+  toggleResponsiveDrawer(): void {
     this.isResponsiveMenuExpanded = !this.isResponsiveMenuExpanded;
+  }
+
+  changeRoute(route: string): void {
+    this.route.navigate([route]);
+    this.isResponsiveMenuExpanded = false;
   }
 }
