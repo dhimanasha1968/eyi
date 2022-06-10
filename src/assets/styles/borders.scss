@@ -1,0 +1,17 @@
+@import './color-codes';
+//border colors
+.white-border {
+    border-color: $eyi-white;
+}
+.danger-border {
+    border-color: $eyi-danger;
+}
+.primary-border {
+    border-color: $eyi-primary;
+}
+.success-border {
+    border-color: $eyi-success;
+}
+.dark-gray-border {
+    border-color: $eyi-dark-gray;
+}

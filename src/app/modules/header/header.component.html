@@ -1,0 +1,36 @@
+<header>
+    <div class="d-none d-lg-flex">
+        <div class="py-2 px-5 flex-grow-1">
+            <img src="./assets/images/Everest-Yoga-logo.png" class="eyi-logo" />
+        </div>
+        <div class="d-flex">
+            <div class="pb-2 pt-1 px-4 h-100 d-flex align-items-center cursor-pointer eyi-nav-item text-uppercase" *ngFor="let nav of navItems">{{nav.title}}</div>
+        </div>
+        <div class="d-flex align-items-center p-4 cursor-pointer" (click)="openSideDrawer(content)">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="d-flex d-lg-none position-relative py-2 bg-white eyi-responsive-menu-wrapper" [ngClass]="{'opened': isResponsiveMenuExpanded}">
+        <div class="d-flex align-items-center p-4 cursor-pointer position-absolute" (click)="openResponsiveDrawer()">
+            <i class="ms-5 fa-solid fa-bars eyi-responsive-menu-icon"></i>
+        </div>
+        <div class="text-center flex-grow-1">
+            <img src="./assets/images/Everest-Yoga-logo.png" class="eyi-logo" />
+        </div>
+    </div>
+    <div class="eyi-responsive-menu position-absolute w-100" [ngClass]="{'active': isResponsiveMenuExpanded}">
+        <div *ngFor="let nav of navItems">{{nav.title}}</div>
+    </div>
+</header>
+<ng-template #content let-offcanvas>
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Offcanvas title</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>One fine body&hellip;</p>
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+      </div>
+    </div>
+</ng-template>

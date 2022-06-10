@@ -1,0 +1,41 @@
+@import '../../../assets/styles/color-codes';
+@import '../../../assets/styles/typography';
+@import '../../../assets/styles/variables';
+
+:host {
+    .eyi-logo {
+        height: $eyi-size-75x;
+        width: $eyi-size-75x;
+    }
+
+    .eyi-nav-item {
+        border-top: $eyi-size-5x solid transparent;
+        font-weight: $eyi-font-weight-medium-bold;
+        font-size: $eyi-font-size-sm;
+
+        &.selected,
+        &:hover {
+            border-top: $eyi-size-5x solid $eyi-primary;
+        }
+    }
+
+    .eyi-responsive-menu-wrapper {
+        &.opened {
+            .eyi-responsive-menu-icon {
+                color: $eyi-primary;
+            }
+        }
+    }
+
+    .eyi-responsive-menu {
+        max-height: 0;
+        transition: max-height 0.15s ease-out;
+        overflow: hidden;
+        background: #d5d5d5;
+
+        &.active {
+            max-height: 100%;
+            transition: max-height 0.25s ease-in;
+        }
+    }
+}
