@@ -1,13 +1,13 @@
-<header class="position-absolute w-100">
+<header class="position-fixed w-100" [ngClass]="{'eyi-scrolled-menu': isScrolled}">
     <div class="d-none d-lg-flex">
         <div class="py-2 px-5 flex-grow-1">
-            <img src="./assets/images/Everest-Yoga-logo.png" class="eyi-logo" />
+            <img src="./assets/images/Everest-Yoga-logo.png" class="eyi-logo mt-2" />
         </div>
         <div class="d-flex">
             <div class="pb-2 pt-1 px-4 h-100 d-flex align-items-center cursor-pointer eyi-nav-item text-uppercase" *ngFor="let nav of navItems" (click)="changeRoute(nav.path)">{{nav.title}}</div>
         </div>
         <div class="d-flex align-items-center p-4 cursor-pointer" (click)="openSideDrawer(content)">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars eyi-side-drawer-trigger"></i>
         </div>
     </div>
     <div class="d-flex d-lg-none position-relative py-2 bg-white eyi-responsive-menu-wrapper" [ngClass]="{'opened': isResponsiveMenuExpanded}">

@@ -3,48 +3,81 @@
 @import '../../../assets/styles/variables';
 
 :host {
-    .eyi-logo {
-        height: $eyi-size-75x;
-        width: $eyi-size-75x;
-    }
+    display: block;
 
-    .eyi-nav-item {
-        border-top: $eyi-size-5x solid transparent;
-        font-weight: $eyi-font-weight-medium-bold;
-        font-size: $eyi-font-size-sm;
+    header {
+        z-index: 2;
 
-        &.selected,
-        &:hover {
-            border-top: $eyi-size-5x solid $eyi-primary;
-            color: $eyi-primary;
+        .eyi-logo {
+            height: $eyi-size-75x;
+            width: $eyi-size-75x;
         }
-    }
-
-    .eyi-responsive-menu-wrapper {
-        &.opened {
-            .eyi-responsive-menu-icon {
+    
+        .eyi-nav-item {
+            border-top: $eyi-size-5x solid transparent;
+            color: $eyi-white;
+            font-weight: $eyi-font-weight-medium-bold;
+            font-size: $eyi-font-size-sm;
+    
+            &.selected,
+            &:hover {
+                border-top: $eyi-size-5x solid $eyi-primary;
                 color: $eyi-primary;
             }
         }
-    }
 
-    .eyi-responsive-menu {
-        max-height: 0;
-        transition: max-height 0.15s ease-out;
-        overflow: hidden;
-        background: $eyi-white;
+        .eyi-side-drawer-trigger {
+            color: $eyi-white;
 
-        &.active {
-            max-height: 9999px;
-            transition: max-height 0.25s ease-in;
-        }
-
-        .eyi-responsive-menu-item {
-            &.eyi-responsive-menu-last-item {
-                border-bottom: $eyi-size-1x solid $eyi-light-gray;
-            }
             &:hover {
                 color: $eyi-primary;
+            }
+        }
+
+        &.eyi-scrolled-menu {
+            background-color: $eyi-white;
+            .eyi-nav-item,
+            .eyi-side-drawer-trigger {
+                color: $eyi-medium-dark-gray;
+            }
+
+            .eyi-nav-item {
+                border-top: none;
+
+                &.selected,
+                &:hover {
+                    border-top: none;
+                    color: $eyi-primary;
+                }
+            }
+        }
+    
+        .eyi-responsive-menu-wrapper {
+            &.opened {
+                .eyi-responsive-menu-icon {
+                    color: $eyi-primary;
+                }
+            }
+        }
+    
+        .eyi-responsive-menu {
+            max-height: 0;
+            transition: max-height 0.15s ease-out;
+            overflow: hidden;
+            background: $eyi-white;
+    
+            &.active {
+                max-height: $eyi-size-300x;
+                transition: max-height 0.25s ease-in;
+            }
+    
+            .eyi-responsive-menu-item {
+                &.eyi-responsive-menu-last-item {
+                    border-bottom: $eyi-size-1x solid $eyi-light-gray;
+                }
+                &:hover {
+                    color: $eyi-primary;
+                }
             }
         }
     }

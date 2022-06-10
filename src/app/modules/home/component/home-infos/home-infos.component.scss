@@ -1,0 +1,19 @@
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-home-infos {
+        .eyi-info-icon {
+            border-radius: $eyi-size-40x;
+            height: $eyi-size-80x;
+            transition: all .35s cubic-bezier(.61,.92,0,.21);
+            width: $eyi-size-80x;
+        }
+
+        &:hover {
+            .eyi-info-icon {
+                transform: translate3d(0,-10px,0);
+            }    
+        }
+        
+    }
+}

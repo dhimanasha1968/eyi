@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit, TemplateRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderContent, NavItems } from './models';
@@ -8,7 +8,7 @@ import { HeaderContent, NavItems } from './models';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   navItems: NavItems[] = [
     {
       path: '/home',
@@ -61,10 +61,24 @@ export class HeaderComponent implements OnInit {
       }
     ]
   };
+  isScrolled = false;
+  @HostListener("window:scroll", [])
+  onScroll(): void {
+    if (window.scrollY === 0) {
+      this.isScrolled = false;
+    } else {
+      if (!this.isScrolled) {
+        this.isScrolled = true;
+      }
+    }
+  }
 
   constructor(private offcanvasService: NgbOffcanvas, private route: Router) { }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void {
   }
 
   openSideDrawer(content: TemplateRef<any>): void {

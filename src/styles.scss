@@ -4,6 +4,35 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+html, body { height: 100%; }
+
+* {
+    // for Firefox
+    scrollbar-width:thin;
+    scrollbar-color: $eyi-dark-gray $eyi-white;
+
+    // for rest browsers*
+    & ::-webkit-scrollbar {
+    width: $eyi-size-5x;
+    height: $eyi-size-5x;
+    }
+
+    /* Track */
+    & ::-webkit-scrollbar-track {
+    background: $eyi-white;
+    }
+
+    /* Handle */
+    & ::-webkit-scrollbar-thumb {
+        background: $eyi-dark-gray;
+        border-radius: $eyi-size-4x;
+    }
+    /* Handle on hover */
+    & ::-webkit-scrollbar-thumb:hover {
+        background: $eyi-very-dark-gray;
+    }
+}
+
 body {
     * {
         color: $eyi-medium-dark-gray;

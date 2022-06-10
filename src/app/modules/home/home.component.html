@@ -1,1 +1,39 @@
-<p>home works!</p>
+<div class="eyi-home-wrapper">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide" class="eyi-slider-images" />
+          </div>
+          <div class="carousel-caption">
+            <h3 class="text-white">First slide label</h3>
+            <p class="text-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]" alt="Random second slide" class="eyi-slider-images" />
+          </div>
+          <div class="carousel-caption text-white">
+            <h3 class="text-white">Second slide label</h3>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="Random third slide" class="eyi-slider-images" />
+          </div>
+          <div class="carousel-caption text-white">
+            <h3 class="text-white">Third slide label</h3>
+            <p class="text-white">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </ng-template>
+    </ngb-carousel>
+    <div class="row col-12 pt-4 bg-white">
+        <div class="col-md-4 col-sm-12" *ngFor="let info of homeInfo">
+            <eyi-home-infos [info]="info"></eyi-home-infos>
+        </div>
+    </div>
+    <div class="row col-12 eyi-moto">
+
+    </div>
+</div>
