@@ -1,12 +1,20 @@
-<div class="row col-12">
-    <div class="col-md-3 col-sm-12" *ngFor="let img of images">
+<div class="row col-12 py-2">
+    <div class="col-md-{{columnSize}} col-sm-12" *ngFor="let img of images" [style.padding.px]="gutterSize">
         <div class="position-relative eyi-home-section">
             <img [src]="img.path" class="eyi-home-section-img" />
-            <ng-container *ngIf="img.title && img.category">
+            <ng-container *ngIf="hoverMode">
                 <div class="eyi-home-section-label bg-primary position-absolute">
                     <h4 class="text-uppercase text-white">{{img.title}}</h4>
                     <div class="text-capitalize text-white">
                         {{img.category}}
+                    </div>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="!hoverMode">
+                <div class="eyi-home-section-info">
+                    <h4 class="text-uppercase py-4 m-0">{{img.title}}</h4>
+                    <div class="text-capitalize text-secondary pb-4">
+                        {{img.description}}
                     </div>
                 </div>
             </ng-container>

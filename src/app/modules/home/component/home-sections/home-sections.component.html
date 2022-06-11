@@ -16,6 +16,11 @@
         </ng-container>
     </div>
     <ng-container *ngIf="homeSectionInfo.images">
-        <eyi-home-section-images [images]="homeSectionInfo.images"></eyi-home-section-images>
+        <eyi-home-section-images
+            [images]="homeSectionInfo.images"
+            [hoverMode]="homeSectionInfo.hoverMode!"
+            [gutterSize]="homeSectionInfo.gutterSize!"
+            [columnSize]="homeSectionInfo.columnSize ? homeSectionInfo.columnSize : 3"
+        ></eyi-home-section-images>
     </ng-container>
 </div>

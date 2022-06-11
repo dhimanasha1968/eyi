@@ -8,6 +8,9 @@ import { HomeSectionInfoImages } from '../../models';
 })
 export class HomeSectionImagesComponent implements OnInit {
   @Input() images!: HomeSectionInfoImages[];
+  @Input() hoverMode!: boolean;
+  @Input() gutterSize: number = 0;
+  @Input() columnSize: number = 3;
 
   constructor() { }
 
