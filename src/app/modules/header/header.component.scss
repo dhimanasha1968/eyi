@@ -36,6 +36,8 @@
 
         &.eyi-scrolled-menu {
             background-color: $eyi-white;
+            box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
+
             .eyi-nav-item,
             .eyi-side-drawer-trigger {
                 color: $eyi-medium-dark-gray;

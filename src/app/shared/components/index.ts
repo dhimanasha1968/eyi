@@ -1,1 +1,1 @@
-export * from './eyi-logo-animation';
+export * from './logo-animation';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeInfo } from './models';
+import { HomeInfo, HomeSectionInfo } from './models';
 
 @Component({
   selector: 'eyi-home',
@@ -25,6 +25,30 @@ export class HomeComponent implements OnInit {
       description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden'
     }
   ];
+  latestTrends: HomeSectionInfo = {
+    title: 'Latest Yoga Trends',
+    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.'
+  }
+  spiritualGuide: HomeSectionInfo = {
+    title: 'Your Spiritual Guide',
+    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
+    categories: [
+      {label: 'All', value: 'all'},
+      {label: 'Hatha', value: 'hatha'},
+      {label: 'Pilates', value: 'pilates'},
+      {label: 'Yoga', value: 'yoga'}
+    ],
+    images: [
+      {path: './assets/images/dummy_image.jpg', title: 'Exercise', category: 'hatha'},
+      {path: './assets/images/dummy_image.jpg', title: 'Habbit', category: 'pilates'},
+      {path: './assets/images/dummy_image.jpg', title: 'Yoga Pose', category: 'hatha'},
+      {path: './assets/images/dummy_image.jpg', title: 'Learning', category: 'pilates'},
+      {path: './assets/images/dummy_image.jpg', title: 'Time', category: 'yoga'},
+      {path: './assets/images/dummy_image.jpg', title: 'Peace', category: 'yoga'},
+      {path: './assets/images/dummy_image.jpg', title: 'Focus', category: 'hatha'},
+      {path: './assets/images/dummy_image.jpg', title: 'Practice', category: 'yoga'}
+    ]
+  }
 
   constructor() { }
 

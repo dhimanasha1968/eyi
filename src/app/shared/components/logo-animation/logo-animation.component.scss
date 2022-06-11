@@ -1,0 +1,19 @@
+@import '../../../../assets/styles/color-codes';
+@import '../../../../assets/styles/variables';
+
+:host {
+    .eyi-logo-animation {
+        align-items: center;
+        display: flex;
+
+        .eyi-logo {
+            height: $eyi-size-75x;
+            width: $eyi-size-75x;
+        }
+
+        .eyi-logo-separator {
+            border-top: $eyi-size-1x solid $eyi-primary;
+            width: $eyi-size-100x;
+        }
+    }
+}

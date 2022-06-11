@@ -1,0 +1,24 @@
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-home-section {
+        .eyi-home-section-img,
+        .eyi-home-section-label {
+            width: 100%;
+            height: $eyi-size-300x;
+        }
+        .eyi-home-section-label {
+            align-items: center;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0.8;
+            top: 0;
+        }
+        &:hover {
+            .eyi-home-section-label {
+                display: flex;
+            }
+        }
+    }
+}

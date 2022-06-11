@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EyiLogoAnimationComponent } from './eyi-logo-animation.component';
+import { LogoAnimationComponent } from './logo-animation.component';
 
-describe('EyiLogoAnimationComponent', () => {
-  let component: EyiLogoAnimationComponent;
-  let fixture: ComponentFixture<EyiLogoAnimationComponent>;
+describe('LogoAnimationComponent', () => {
+  let component: LogoAnimationComponent;
+  let fixture: ComponentFixture<LogoAnimationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EyiLogoAnimationComponent ]
+      declarations: [ LogoAnimationComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EyiLogoAnimationComponent);
+    fixture = TestBed.createComponent(LogoAnimationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

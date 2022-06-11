@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EyiLogoAnimationComponent } from './components/eyi-logo-animation/eyi-logo-animation.component';
+import { LogoAnimationComponent } from './components/logo-animation/logo-animation.component';
 
 
 
 @NgModule({
   declarations: [
-    EyiLogoAnimationComponent
+    LogoAnimationComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    EyiLogoAnimationComponent
+    LogoAnimationComponent
   ]
 })
 export class SharedModule { }

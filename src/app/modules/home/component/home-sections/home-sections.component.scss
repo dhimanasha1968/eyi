@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-home-section-wrapper {
+        padding: $eyi-size-100x 0 $eyi-size-50x 0;
+    }
+
+    .eyi-home-section-categories {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        .eyi-home-section-category {
+            &:hover {
+                color: $eyi-primary;
+            }
+        }
+    }
+}

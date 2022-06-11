@@ -1,0 +1,21 @@
+<div class="eyi-home-section-wrapper">
+    <div class="d-flex justify-content-center">
+        <eyi-logo-animation></eyi-logo-animation>
+    </div>
+    <div class="eyi-home-section text-center pt-3">
+        <h2 class="text-uppercase pt-3">{{homeSectionInfo.title}}</h2>
+        <div class="eyi-home-section-description w-50 m-auto text-secondary py-3">
+            {{homeSectionInfo.description}}
+        </div>
+        <ng-container *ngIf="homeSectionInfo.categories">
+            <ul class="eyi-home-section-categories d-flex justify-content-center">
+                <li class="float-start cursor-pointer p-4 text-uppercase eyi-home-section-category" *ngFor="let cat of homeSectionInfo.categories">
+                    {{cat.label}}
+                </li>
+            </ul>
+        </ng-container>
+    </div>
+    <ng-container *ngIf="homeSectionInfo.images">
+        <eyi-home-section-images [images]="homeSectionInfo.images"></eyi-home-section-images>
+    </ng-container>
+</div>

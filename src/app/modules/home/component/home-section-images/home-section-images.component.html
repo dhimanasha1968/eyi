@@ -1,0 +1,15 @@
+<div class="row col-12">
+    <div class="col-md-3 col-sm-12" *ngFor="let img of images">
+        <div class="position-relative eyi-home-section">
+            <img [src]="img.path" class="eyi-home-section-img" />
+            <ng-container *ngIf="img.title && img.category">
+                <div class="eyi-home-section-label bg-primary position-absolute">
+                    <h4 class="text-uppercase text-white">{{img.title}}</h4>
+                    <div class="text-capitalize text-white">
+                        {{img.category}}
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
