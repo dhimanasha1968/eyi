@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HomeSectionInfoImages } from '../../models';
+import { HomeSectionInfoImages } from '../../../../core/models';
 
 @Component({
   selector: 'eyi-home-section-images',

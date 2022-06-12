@@ -1,0 +1,49 @@
+<div class="eyi-about-section-wrapper">
+    <div class="eyi-about-section text-center pt-3">
+        <h2 class="text-uppercase pt-3">{{aboutSectionInfo.title}}</h2>
+        <div class="eyi-about-section-description w-50 m-auto text-secondary py-3">
+            {{aboutSectionInfo.description}}
+        </div>
+    </div>
+    <ngb-carousel [showNavigationArrows]="false" #carousel class="eyi-carousel">
+        <ng-container *ngFor="let car of aboutSectionInfo.carouselItems">
+            <ng-template ngbSlide>
+                <div class="row col-12 px-2">
+                    <div class="col-md-3 col-sm-12 py-4 d-flex justify-content-center" *ngFor="let usr of car.items">
+                        <div class="eyi-flip-card">
+                            <div class="eyi-flip-card-inner">
+                              <div class="eyi-flip-card-front">
+                                <img [src]="usr.image" class="eyi-user-image my-4" />
+                                <h3 class="text-uppercase py-4">{{usr.name}}</h3>
+                                <span class="bg-primary text-white px-3 py-1">
+                                    {{usr.job}}
+                                </span>
+                                <div class="text-secondary py-4">
+                                    {{usr.description}}
+                                </div>
+                              </div>
+                              <div class="eyi-flip-card-back">
+                                <i class="fa-solid fa-message text-white"></i>
+                                <h6 class="text-uppercase text-white pt-4">Contact Me</h6>
+                                <span class="text-white pt-4">{{usr.mobile}}</span>
+                                <span class="text-white pt-2">{{usr.email}}</span>
+                                <span class="py-4">
+                                    <a [href]="usr.facebook" target="_blank">
+                                        <i class="fa-brands fa-facebook-f text-white cursor-pointer"></i>
+                                    </a>
+                                    <a [href]="usr.twitter" target="_blank">
+                                        <i class="fa-brands fa-twitter text-white ms-3 cursor-pointer"></i>
+                                    </a>
+                                    <a [href]="usr.linkedIn" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in text-white ms-3 cursor-pointer"></i>
+                                    </a>
+                                </span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ng-container>
+    </ngb-carousel>
+</div>

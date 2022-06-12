@@ -1,0 +1,62 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-carousel {
+        padding: $eyi-size-40x 0;
+    }
+    .eyi-about-section-wrapper {
+        padding: $eyi-size-100x 0 $eyi-size-50x 0;
+    }
+
+    .eyi-flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: $eyi-size-400x;
+        padding: 0 $eyi-size-10x;
+        perspective: $eyi-size-1000x;
+
+        .eyi-flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            // box-shadow: 0 $eyi-size-4x $eyi-size-8x 0 rgba(0,0,0,0.2);
+
+            .eyi-flip-card-front,
+            .eyi-flip-card-back {
+                align-items: center;
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+            }
+
+            .eyi-flip-card-front {
+                background-color: $eyi-white;
+
+                .eyi-user-image {
+                    border-radius: $eyi-size-60x;
+                    height: $eyi-size-120x;
+                    width: $eyi-size-120x;
+                }
+            }
+              
+            .eyi-flip-card-back {
+                background-color: $eyi-primary;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &:hover {
+            .eyi-flip-card-inner {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

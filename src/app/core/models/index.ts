@@ -1,1 +1,1 @@
-export * from './shares.models';
+export * from './shared.models';

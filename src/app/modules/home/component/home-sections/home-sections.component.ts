@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HomeSectionInfo } from '../../models';
+import { HomeSectionInfo } from '../../../../core/models';
 
 @Component({
   selector: 'eyi-home-sections',

@@ -1,0 +1,24 @@
+<div class="row col-12 pt-4 pb-4 eyi-desc-with-state" [ngClass]="{'bg-white': !customizedBackground}">
+    <div class="col-md-6 col-sm-12 pt-4 pb-4">
+        <div class="p-4">
+            <h3 class="px-4 pb-3 text-uppercase" [ngClass]="{'text-white': customizedBackground}">{{description.title}}</h3>
+            <div class="eyi-separator mx-4 mb-3" [ngClass]="{'border-white': customizedBackground}"></div>
+            <div class="px-4 text-secondary" [ngClass]="{'text-white': customizedBackground}">{{description.description}}</div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-4 pb-4">
+        <ng-container *ngFor="let stat of description.stats">
+            <div class="px-4 py-2">
+                <div class="d-flex">
+                    <div class="flex-grow-1 text-secondary" [ngClass]="{'text-white': customizedBackground}">
+                        {{stat.label}}
+                    </div>
+                    <div [ngClass]="{'text-white': customizedBackground}">
+                        {{stat.value}} %
+                    </div>
+                </div>
+                <ngb-progressbar type="primary" [value]="stat.value"></ngb-progressbar>
+            </div>
+        </ng-container>
+    </div>
+</div>

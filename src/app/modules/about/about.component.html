@@ -1,1 +1,11 @@
-<p>about works!</p>
+<div class="eyi-about-wrapper">
+    <eyi-banner-with-caption [bannerInfo]="aboutUsBanner"></eyi-banner-with-caption>
+    <div class="row col-12 pt-4 bg-white">
+        <div class="col-md-4 col-sm-12" *ngFor="let info of aboutInfo">
+            <eyi-stratergy-info [info]="info"></eyi-stratergy-info>
+        </div>
+    </div>
+    <eyi-desc-with-stats [description]="yogaDescription" [customizedBackground]="true"></eyi-desc-with-stats>
+    <eyi-users-list [aboutSectionInfo]="usersInfo"></eyi-users-list>
+    <eyi-user-tweets  [tweets]="happyCustomers" title="Happy Customers"></eyi-user-tweets>
+</div>

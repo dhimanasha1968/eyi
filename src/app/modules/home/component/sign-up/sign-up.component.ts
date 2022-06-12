@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SignUpInfo } from '../../models';
+import { SignUpInfo } from '../../../../core/models';
 
 @Component({
   selector: 'eyi-sign-up',

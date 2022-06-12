@@ -1,0 +1,21 @@
+@import '../../../../assets/styles/variables';
+
+:host {
+    .eyi-banner-wrapper {
+        height: 75vh;
+        overflow: hidden;
+        width: $eyi-size-100xl;
+
+        .eyi-banner-info {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+
+            .eyi-banner-description {
+                padding: 0 $eyi-size-20xl;
+            }
+        }
+    }
+}

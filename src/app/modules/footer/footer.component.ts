@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit {
       {title: 'Your Inspiration', msg: 'Lorem ipsum dolor sit amet, consectetur...', date: 'June 18, 2022'}
     ],
     instagramTitle: 'Instagram',
-    instaPics: ['./assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG', './assets/images/dummy_image.JPG']
+    instaPics: ['./assets/images/dummy_image.JPG', './assets/images/Carousel_1.JPG', './assets/images/dummy_image.JPG', './assets/images/Carousel_1.JPG', './assets/images/Carousel_1.JPG', './assets/images/Carousel_2.JPG', './assets/images/dummy_image.JPG', './assets/images/Carousel_2.JPG']
   }
 
   constructor() { }

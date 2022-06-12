@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeTweetsComponent } from './home-tweets.component';
+import { DescWithStatsComponent } from './desc-with-stats.component';
 
-describe('HomeTweetsComponent', () => {
-  let component: HomeTweetsComponent;
-  let fixture: ComponentFixture<HomeTweetsComponent>;
+describe('DescWithStatsComponent', () => {
+  let component: DescWithStatsComponent;
+  let fixture: ComponentFixture<DescWithStatsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeTweetsComponent ]
+      declarations: [ DescWithStatsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeTweetsComponent);
+    fixture = TestBed.createComponent(DescWithStatsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

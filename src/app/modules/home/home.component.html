@@ -30,7 +30,7 @@
     </ngb-carousel>
     <div class="row col-12 pt-4 bg-white">
         <div class="col-md-4 col-sm-12" *ngFor="let info of homeInfo">
-            <eyi-home-infos [info]="info"></eyi-home-infos>
+            <eyi-stratergy-info [info]="info"></eyi-stratergy-info>
         </div>
     </div>
     <div class="row col-12 eyi-moto">
@@ -39,12 +39,12 @@
     <div class="row col-12 eyi-moto">
       <eyi-home-sections [homeSectionInfo]="chooseClass"></eyi-home-sections>
     </div>
-    <eyi-home-desc-with-stats [description]="yogaDescription"></eyi-home-desc-with-stats>
-    <eyi-home-desc-with-img [info]="wellnessInformation"></eyi-home-desc-with-img>
+    <eyi-desc-with-stats [customizedBackground]="false" [description]="yogaDescription"></eyi-desc-with-stats>
+    <eyi-desc-with-image [info]="wellnessInformation"></eyi-desc-with-image>
     <div class="row col-12 eyi-moto">
       <eyi-home-sections [homeSectionInfo]="latestTrends"></eyi-home-sections>
     </div>
-    <eyi-home-tweets [tweets]="happyCustomers" title="Happy Customers"></eyi-home-tweets>
+    <eyi-user-tweets [tweets]="happyCustomers" title="Happy Customers"></eyi-user-tweets>
     <div class="row col-12 eyi-moto">
       <eyi-home-sections [homeSectionInfo]="signUpClasses"></eyi-home-sections>
       <eyi-sign-up [signUpInfo]="signUpInfo"></eyi-sign-up>
