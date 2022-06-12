@@ -39,23 +39,23 @@ export class HeaderComponent implements OnInit, OnDestroy {
   headerContent: HeaderContent = {
     sideDrawerTitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     sideDrawerImages: [
-      './assets/images/dummy_image.jpg',
-      './assets/images/dummy_image.jpg',
-      './assets/images/dummy_image.jpg'
+      './assets/images/dummy_image.JPG',
+      './assets/images/dummy_image.JPG',
+      './assets/images/dummy_image.JPG'
     ],
     latestNews: [
       {
-        icon: './assets/images/dummy_image.jpg',
+        icon: './assets/images/dummy_image.JPG',
         title: 'Work Hard',
         time: 'November 25, 2020'
       },
       {
-        icon: './assets/images/dummy_image.jpg',
+        icon: './assets/images/dummy_image.JPG',
         title: 'Be Awesome Today!',
         time: 'November 20, 2020'
       },
       {
-        icon: './assets/images/dummy_image.jpg',
+        icon: './assets/images/dummy_image.JPG',
         title: 'Set Goals. Reach.',
         time: 'November 12, 2022'
       }

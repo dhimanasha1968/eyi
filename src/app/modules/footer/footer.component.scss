@@ -1,0 +1,50 @@
+@import '../../../assets/styles/color-codes';
+@import '../../../assets/styles/typography';
+@import '../../../assets/styles/variables';
+
+:host {
+    footer {
+        background-color: $eyi-footer-bg;
+
+        .eyi-footer-wrapper {
+            padding: $eyi-size-100x;
+            .eyi-send-icon {
+                cursor: pointer;
+                position: absolute;
+                top: $eyi-size-10x;
+                right: $eyi-size-10x;
+            }
+
+            .eyi-twitter-link {
+                color: $eyi-white;
+                &:hover {
+                    color: $eyi-primary;
+                }
+            }
+
+            .eyi-footer-posts {
+                border-bottom: $eyi-size-1x solid $eyi-text-widget-color;
+            }
+
+            .eyi-post-widget-desc,
+            .eyi-post-widget-data {
+                font-size: $eyi-font-size-xs;
+            }
+            .eyi-post-widget-data {
+                color: $eyi-text-widget-color;
+            }
+
+            .eyi-footer-insta-pic {
+                height: $eyi-size-50x;
+                width: $eyi-size-50x;
+            }
+        }
+        .eyi-footer-copy-right {
+            border-top: $eyi-size-1x solid $eyi-text-widget-color;
+            .eyi-logo {
+                height: $eyi-size-75x;
+                width: $eyi-size-75x;
+            }
+        }
+    }
+}

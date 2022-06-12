@@ -1,0 +1,36 @@
+<div class="row col-12">
+    <div class="col-md-6 col-sm-12">
+       <div class="px-4 pb-4">
+            <div class="mb-3">
+                <input type="text" class="form-control p-4" placeholder="First Name" />
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control p-4" placeholder="Last Name" />
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control p-4" placeholder="Email Address" />
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control p-4" placeholder="Comment" />
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary text-white w-100 text-uppercase">Submit Message</button>
+            </div>
+       </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="px-4 pb-4">
+            <h3 class="text-uppercase">
+                {{signUpInfo.title}}
+            </h3>
+            <span class="text-secondary">
+                {{signUpInfo.description}}
+            </span>
+            <div class="row col-12">
+                <div class="col-md-6 col-sm-12" *ngFor="let loc of signUpInfo.locations">
+                    <eyi-location [location]="loc"></eyi-location>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

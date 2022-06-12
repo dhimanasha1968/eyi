@@ -9,6 +9,7 @@ import { HomeSectionImagesComponent } from './component/home-section-images/home
 import { HomeDescWithStatsComponent } from './component/home-desc-with-stats/home-desc-with-stats.component';
 import { HomeDescWithImgComponent } from './component/home-desc-with-img/home-desc-with-img.component';
 import { HomeTweetsComponent } from './component/home-tweets/home-tweets.component';
+import { SignUpComponent } from './component/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeTweetsComponent } from './component/home-tweets/home-tweets.compone
     HomeSectionImagesComponent,
     HomeDescWithStatsComponent,
     HomeDescWithImgComponent,
-    HomeTweetsComponent
+    HomeTweetsComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,

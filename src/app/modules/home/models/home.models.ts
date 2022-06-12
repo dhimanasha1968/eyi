@@ -1,3 +1,5 @@
+import { Locations } from "../../../core/models";
+
 export interface HomeInfo {
     icon: string;
     title: string;
@@ -53,4 +55,10 @@ export interface HomeTweets {
     name: string;
     title: string;
     message: string;
+}
+
+export interface SignUpInfo {
+    title: string;
+    description: string;
+    locations: Locations[];
 }

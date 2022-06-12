@@ -6,7 +6,7 @@
           </div>
           <div class="carousel-caption">
             <h3 class="text-white">First slide label</h3>
-            <p class="text-white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p class="text-white">This is first slide</p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
@@ -15,7 +15,7 @@
           </div>
           <div class="carousel-caption text-white">
             <h3 class="text-white">Second slide label</h3>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-white">This is second slide</p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
@@ -24,7 +24,7 @@
           </div>
           <div class="carousel-caption text-white">
             <h3 class="text-white">Third slide label</h3>
-            <p class="text-white">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p class="text-white">This is third slide</p>
           </div>
         </ng-template>
     </ngb-carousel>
@@ -45,4 +45,8 @@
       <eyi-home-sections [homeSectionInfo]="latestTrends"></eyi-home-sections>
     </div>
     <eyi-home-tweets [tweets]="happyCustomers" title="Happy Customers"></eyi-home-tweets>
+    <div class="row col-12 eyi-moto">
+      <eyi-home-sections [homeSectionInfo]="signUpClasses"></eyi-home-sections>
+      <eyi-sign-up [signUpInfo]="signUpInfo"></eyi-sign-up>
+    </div>
 </div>
