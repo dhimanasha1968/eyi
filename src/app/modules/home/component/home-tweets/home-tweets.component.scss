@@ -1,0 +1,17 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    display: block;
+
+    .eyi-tweets-wrapper {
+        .eyi-tweet-inner-wrapper {
+            background-color: $eyi-tweets-bg;
+            padding: $eyi-size-120x 0;
+
+            .eyi-tweet-wrapper {
+                padding: $eyi-size-80x;
+            }
+        }
+    }
+}

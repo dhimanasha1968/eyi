@@ -10,6 +10,7 @@ export class HomeSectionImagesComponent implements OnInit {
   @Input() images!: HomeSectionInfoImages[];
   @Input() hoverMode!: boolean;
   @Input() gutterSize: number = 0;
+  @Input() marginGutterSize: number = 0;
   @Input() columnSize: number = 3;
 
   constructor() { }

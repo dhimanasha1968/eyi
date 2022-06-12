@@ -1,0 +1,17 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-home-desc-image-wrapper {
+        background-color: $eyi-green-bg;
+
+        .eyi-separator {
+            border: $eyi-size-1x solid $eyi-white;
+            width: $eyi-size-100x;
+        }
+
+        .eyi-image {
+            height: $eyi-size-300x;
+        }
+    }
+}

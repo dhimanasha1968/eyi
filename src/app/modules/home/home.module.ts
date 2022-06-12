@@ -7,6 +7,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { HomeSectionsComponent } from './component/home-sections/home-sections.component';
 import { HomeSectionImagesComponent } from './component/home-section-images/home-section-images.component';
 import { HomeDescWithStatsComponent } from './component/home-desc-with-stats/home-desc-with-stats.component';
+import { HomeDescWithImgComponent } from './component/home-desc-with-img/home-desc-with-img.component';
+import { HomeTweetsComponent } from './component/home-tweets/home-tweets.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HomeDescWithStatsComponent } from './component/home-desc-with-stats/hom
     HomeInfosComponent,
     HomeSectionsComponent,
     HomeSectionImagesComponent,
-    HomeDescWithStatsComponent
+    HomeDescWithStatsComponent,
+    HomeDescWithImgComponent,
+    HomeTweetsComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,12 @@ import { HomeDescWithStatsComponent } from './component/home-desc-with-stats/hom
     NgbProgressbarModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    HomeInfosComponent,
+    HomeSectionsComponent,
+    HomeSectionImagesComponent,
+    HomeDescWithStatsComponent,
+    HomeDescWithImgComponent
   ]
 })
 export class HomeModule { }

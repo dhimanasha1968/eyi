@@ -23,4 +23,23 @@
             [columnSize]="homeSectionInfo.columnSize ? homeSectionInfo.columnSize : 3"
         ></eyi-home-section-images>
     </ng-container>
+
+    <div class="px-4" *ngIf="homeSectionInfo.carouselItems">
+        <ngb-carousel>
+            <ng-container *ngFor="let carousel of homeSectionInfo.carouselItems">
+                <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                        <div class="row col-12">
+                            <eyi-home-section-images
+                                [images]="carousel.items"
+                                [hoverMode]="false"
+                                [marginGutterSize]="20"
+                                [columnSize]="4"
+                            ></eyi-home-section-images>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </ngb-carousel>
+    </div>
 </div>

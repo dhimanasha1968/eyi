@@ -1,6 +1,6 @@
 <div class="row col-12 py-2">
     <div class="col-md-{{columnSize}} col-sm-12" *ngFor="let img of images" [style.padding.px]="gutterSize">
-        <div class="position-relative eyi-home-section">
+        <div class="position-relative eyi-home-section" [ngClass]="{'bg-white': marginGutterSize}" [style.margin.px]="marginGutterSize">
             <img [src]="img.path" class="eyi-home-section-img" />
             <ng-container *ngIf="hoverMode">
                 <div class="eyi-home-section-label bg-primary position-absolute">
@@ -11,10 +11,21 @@
                 </div>
             </ng-container>
             <ng-container *ngIf="!hoverMode">
-                <div class="eyi-home-section-info">
+                <div class="eyi-home-section-info" [ngClass]="{'px-4': marginGutterSize}">
                     <h4 class="text-uppercase py-4 m-0">{{img.title}}</h4>
                     <div class="text-capitalize text-secondary pb-4">
                         {{img.description}}
+                    </div>
+                    <div *ngIf="img.socialInfo" class="d-flex py-3 eyi-social-info">
+                        <div class="flex-grow-1">
+                            <i class="fa-solid fa-circle text-primary"></i>
+                            <span class="ms-2 eyi-social-info-label">{{img.socialInfo}}</span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f me-2 text-primary"></i>
+                            <i class="fa-brands fa-twitter me-2 text-primary"></i>
+                            <i class="fa-brands fa-linkedin-in text-primary"></i>
+                        </div>
                     </div>
                 </div>
             </ng-container>

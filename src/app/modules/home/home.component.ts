@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeInfo, HomeSectionInfo, YogaStatsDesc } from './models';
+import { HomeInfo, HomeSectionInfo, HomeTweets, YogaStatsDesc, YogaWellnessInformation } from './models';
 
 @Component({
   selector: 'eyi-home',
@@ -27,7 +27,23 @@ export class HomeComponent implements OnInit {
   ];
   latestTrends: HomeSectionInfo = {
     title: 'Latest Yoga Trends',
-    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.'
+    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
+    carouselItems: [
+      {
+        items: [
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
+        ]
+      },
+      {
+        items: [
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/dummy_image.jpg', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
+        ]
+      }
+    ]
   };
   spiritualGuide: HomeSectionInfo = {
     title: 'Your Spiritual Guide',
@@ -71,7 +87,17 @@ export class HomeComponent implements OnInit {
       {label: 'Flexibility', value: 80},
       {label: 'Toned Muscles', value: 50}
     ]
-  }
+  };
+  wellnessInformation: YogaWellnessInformation = {
+    image: './assets/images/dummy_image.jpg',
+    title: 'Yoga enhances your life',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  };
+  happyCustomers: HomeTweets[] = [
+    {name: 'John Snow', title: 'Business Man', message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+    {name: 'Arya Stark', title: 'Doctor', message: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
+    {name: 'Jaime Baratheon', title: 'Business Man', message: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
+  ];
 
   constructor() { }
 

@@ -11,6 +11,8 @@ export class HomeSectionsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    console.log('homeSectionInfo', this.homeSectionInfo)
+  }
 
 }

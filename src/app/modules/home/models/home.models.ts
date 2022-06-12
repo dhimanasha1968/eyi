@@ -9,6 +9,10 @@ export interface HomeSectionCategories {
     value: string;
 }
 
+export interface CarouselItems {
+    items: HomeSectionInfoImages[];
+}
+
 export interface HomeSectionInfo {
     title: string;
     description: string;
@@ -17,6 +21,7 @@ export interface HomeSectionInfo {
     hoverMode?: boolean;
     gutterSize?: number;
     columnSize?: number;
+    carouselItems?: CarouselItems[];
 }
 
 export interface HomeSectionInfoImages {
@@ -24,6 +29,7 @@ export interface HomeSectionInfoImages {
     title?: string;
     category?: string;
     description?: string;
+    socialInfo?: string;
 }
 
 export interface YogaStats {
@@ -35,4 +41,16 @@ export interface YogaStatsDesc {
     title: string;
     description: string;
     stats: YogaStats[];
+}
+
+export interface YogaWellnessInformation {
+    title: string;
+    image: string;
+    description: string;
+}
+
+export interface HomeTweets {
+    name: string;
+    title: string;
+    message: string;
 }
