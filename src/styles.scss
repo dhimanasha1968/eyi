@@ -41,3 +41,28 @@ body {
 }
 
 @import './assets/styles/custom';
+
+.accordion-item {
+    border: 0;
+    .accordion-header {
+        border-bottom: $eyi-size-1x solid $eyi-secondary;
+    }
+    .accordion-button {
+        background: transparent;
+        box-shadow: none;
+        color: $eyi-secondary;
+        font-weight: $eyi-font-weight-xl;
+        text-transform: uppercase;
+        &:focus {
+            box-shadow: none;
+        }
+        &:after {
+            background-image: none;
+            height: 0;
+            width: 0;
+        }
+        &:not(.collapsed) {
+            color: $eyi-primary;
+        }
+    }
+}

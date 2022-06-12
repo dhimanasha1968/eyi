@@ -8,6 +8,8 @@ import { HeaderModule } from './modules/header/header.module';
 import { HomeModule } from './modules/home/home.module';
 import { FooterModule } from './modules/footer/footer.module';
 import { AboutModule } from './modules/about/about.module';
+import { GalleryModule } from './modules/gallery/gallery.module';
+import { FaqModule } from './modules/faq/faq.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AboutModule } from './modules/about/about.module';
     HeaderModule,
     HomeModule,
     FooterModule,
-    AboutModule
+    AboutModule,
+    GalleryModule,
+    FaqModule
   ],
   providers: [],
   bootstrap: [AppComponent]

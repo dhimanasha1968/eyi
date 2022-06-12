@@ -1,1 +1,32 @@
-<p>faq works!</p>
+<div class="eyi-faq-wrapper">
+    <eyi-banner-with-caption [bannerInfo]="faqBanner"></eyi-banner-with-caption>
+    <div class="eyi-faq-section p-4">
+        <h2 class="text-uppercase pt-3">{{faqSectionInfo.title}}</h2>
+        <div class="eyi-faq-section-description text-secondary py-3">
+            {{faqSectionInfo.description}}
+        </div>
+    </div>
+    <div class="p-4">
+        <ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+            <ng-container *ngFor="let faq of faqSectionInfo.faqs; let i = index">
+                <ngb-panel [id]="'acc' + i">
+                    <ng-template ngbPanelTitle>
+                        <div class="d-flex w-100">
+                            <div class="flex-grow-1" [ngClass]="{'text-primary': acc.isExpanded('acc' + i)}">
+                                {{faq.title}}
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-angle-down" [ngClass]="{'eyi-rotate text-primary': acc.isExpanded('acc' + i)}"></i>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template ngbPanelContent>
+                        <span class="text-secondary">
+                            {{faq.description}}
+                        </span>
+                    </ng-template>
+                  </ngb-panel>
+            </ng-container>
+        </ngb-accordion>
+    </div>
+</div>

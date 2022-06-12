@@ -116,3 +116,14 @@ export interface AboutSectionInfo {
     description: string;
     carouselItems: AboutCarouselItems[];
 }
+
+export interface FaqItem {
+    title: string;
+    description: string;
+}
+
+export interface FaqSectionInfo {
+    title: string;
+    description: string;
+    faqs: FaqItem[];
+}

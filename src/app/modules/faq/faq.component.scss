@@ -1,0 +1,6 @@
+:host {
+    .eyi-rotate {
+        transform: rotate(-180deg);
+        transition: transform 150ms ease;
+    }
+}
