@@ -1,0 +1,37 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import 'typography';
+@import 'color-codes';
+
+$font-family-sans-serif: $eyi-font-family;
+$font-size-base: $eyi-font-size-lg;
+$line-height-base: $eyi-line-height-base;
+$body-bg: $eyi-bg-color;
+$body-color: $eyi-dark;
+$input-bg: $eyi-white;
+$pagination-color: $eyi-primary;
+$pagination-active-bg: $eyi-primary;
+$dropdown-link-active-bg: $eyi-primary;
+$grid-gutter-width: 0;
+
+$theme-colors: (
+    'primary':    $eyi-primary,
+    'secondary':  $eyi-secondary,
+    'success':    $eyi-success,
+    'info':       $eyi-info,
+    'warning':    $eyi-warning,
+    'danger':     $eyi-danger,
+    'light':      $eyi-light,
+    'dark':       $eyi-dark
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px,
+);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';

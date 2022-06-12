@@ -1,0 +1,28 @@
+@import './variables';
+@import './color-codes';
+
+.text-underline-hover {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.eyi-cross-icon {
+    right: $eyi-size-10x;
+    top: $eyi-size-10x;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $eyi-heading;
+}
+
+.text-widget {
+    color: $eyi-text-widget;
+}
