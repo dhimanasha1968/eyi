@@ -1,0 +1,59 @@
+<div class="d-flex m-4 pb-4 eyi-event-view-wrapper">
+    <div class="bg-primary text-white p-2 d-flex align-items-center eyi-date">
+        {{event.date}}
+    </div>
+    <div class="flex-grow-1 ms-md-4 ms-sm-0">
+        <h3 class="text-uppercase">{{event.title}}</h3>
+        <div>
+            <i class="fa-solid fa-clock text-secondary"></i>
+            <span class="ms-2 text-secondary">
+                {{event.dateTime}}
+            </span>
+        </div>
+    </div>
+    <div>
+        <strong class="bg-secondary p-2 eyi-price">
+            {{event.price}}
+        </strong>
+    </div>
+</div>
+<div class="row col-12 px-4">
+    <div class="col-md-6 col-sm-12 pe-4">
+        <img [src]="event.image" class="eyi-eveny-image" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="col-12 text-secondary pb-4">
+            {{event.description}}
+        </div>
+        <div class="col-12">
+            <h4 class="text-uppercase">{{event.eventDetails.title}}</h4>
+        </div>
+        <div class="row col-12">
+            <div class="col-md-6 col-sm-12">
+                <div class="mb-2">
+                    <i class="fa-solid fa-calendar"></i><span class="text-uppercase ms-3">Date:</span><span class="ms-2 text-secondary">{{event.eventDetails.date}}</span>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-solid fa-clock"></i><span class="text-uppercase ms-3">Time:</span><span class="ms-2 text-secondary">{{event.eventDetails.time}}</span>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-solid fa-building"></i><span class="text-uppercase ms-3">Venue:</span><span class="ms-2 text-secondary">{{event.eventDetails.venue}}</span>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-solid fa-building"></i><span class="text-uppercase ms-3">Address:</span><span class="ms-2 text-secondary">{{event.eventDetails.address}}</span>
+                </div>
+            </div>
+            <div class="row col-md-6 col-sm-12 ps-2">
+                <div class="mb-2">
+                    <i class="fa-solid fa-user"></i><span class="text-uppercase ms-3">Organizer Name:</span><span class="ms-2 text-secondary">{{event.eventDetails.organizerName}}</span>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-solid fa-phone"></i><span class="text-uppercase ms-3">Phone:</span><span class="ms-2 text-secondary">{{event.eventDetails.phone}}</span>
+                </div>
+                <div class="mb-2">
+                    <i class="fa-solid fa-message"></i><span class="text-uppercase ms-3">Email:</span><span class="ms-2 text-primary">{{event.eventDetails.email}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

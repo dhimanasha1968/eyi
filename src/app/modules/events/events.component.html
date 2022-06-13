@@ -1,3 +1,6 @@
-<div class="eyi-events-wrapper">
+<div class="eyi-events-wrapper bg-white pb-4">
     <eyi-banner-with-caption [bannerInfo]="eventsBanner"></eyi-banner-with-caption>
+    <ng-container *ngFor="let evt of events">
+        <eyi-event-view [event]="evt"></eyi-event-view>
+    </ng-container>
 </div>
