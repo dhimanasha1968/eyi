@@ -1,0 +1,27 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-yoga-section-wrapper {
+        padding: $eyi-size-100x 0 $eyi-size-50x 0;
+
+        .eyi-border-separator {
+            border-top: $eyi-size-1x solid $eyi-yoga-workflow-border;
+        }
+
+        .eyi-workflow-image {
+            border: $eyi-size-1x solid $eyi-yoga-workflow-border;
+            border-radius: $eyi-size-100x;
+            height: $eyi-size-200x;
+            padding: $eyi-size-15x;
+            width: $eyi-size-200x;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .eyi-border-separator {
+            display: none;
+        }
+    }
+
+}

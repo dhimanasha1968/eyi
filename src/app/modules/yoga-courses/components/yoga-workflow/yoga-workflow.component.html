@@ -1,0 +1,26 @@
+<div class="eyi-yoga-section-wrapper bg-white">
+    <div class="d-flex justify-content-center">
+        <eyi-logo-animation></eyi-logo-animation>
+    </div>
+    <div class="eyi-yoga-section text-center pt-3">
+        <h2 class="text-uppercase pt-3">{{workflowInfo.title}}</h2>
+        <div class="eyi-yoga-section-description w-50 m-auto text-secondary py-3">
+            {{workflowInfo.description}}
+        </div>
+    </div>
+    <div class="row col-12 pt-4">
+        <div class="col-md-3 col-sm-12 text-center pt-4" *ngFor="let wrk of workflowInfo.workflows">
+            <div class="d-flex align-items-center">
+                <div class="w-25 eyi-border-separator" [style.visibility]="!wrk.leftSeparator ? 'hidden' : 'visible'"></div>
+                <div class="flex-grow-1">
+                    <img [src]="wrk.image" class="eyi-workflow-image" />
+                </div>
+                <div class="w-25 eyi-border-separator"  [style.visibility]="!wrk.rightSeparator ? 'hidden' : 'visible'"></div>
+            </div>
+            <h3 class="text-uppercase py-4">{{wrk.title}}</h3>
+            <div class="text-secondary px-4">
+                {{wrk.description}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,8 @@ import { FooterModule } from './modules/footer/footer.module';
 import { AboutModule } from './modules/about/about.module';
 import { GalleryModule } from './modules/gallery/gallery.module';
 import { FaqModule } from './modules/faq/faq.module';
+import { EventsModule } from './modules/events/events.module';
+import { YogaCoursesModule } from './modules/yoga-courses/yoga-courses.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FaqModule } from './modules/faq/faq.module';
     FooterModule,
     AboutModule,
     GalleryModule,
-    FaqModule
+    FaqModule,
+    EventsModule,
+    YogaCoursesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

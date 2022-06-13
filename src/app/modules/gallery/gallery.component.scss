@@ -1,0 +1,10 @@
+@import '../../../assets/styles/variables';
+
+:host {
+    .eyi-gallery-images {
+        padding: $eyi-size-100x 0;
+    }
+    .eyi-image {
+        height: $eyi-size-300x;
+    }
+}

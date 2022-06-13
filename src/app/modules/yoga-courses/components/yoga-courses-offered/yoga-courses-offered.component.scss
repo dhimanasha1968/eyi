@@ -1,0 +1,23 @@
+@import '../../../../../assets/styles/color-codes';
+@import '../../../../../assets/styles/variables';
+
+:host {
+    .eyi-yoga-course-offered-wrapper {
+        .eyi-yoga-couses {
+            border-bottom: $eyi-size-1x solid $eyi-yoga-border;
+            border-left: $eyi-size-5x solid $eyi-yoga-left-border;
+            cursor: pointer;
+
+            &:hover,
+            &.eyi-selected {
+                border-left: $eyi-size-5x solid $eyi-primary;
+            }
+        }
+
+        .eyi-yoga-list-item {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

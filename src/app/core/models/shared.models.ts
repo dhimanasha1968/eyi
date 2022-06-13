@@ -127,3 +127,48 @@ export interface FaqSectionInfo {
     description: string;
     faqs: FaqItem[];
 }
+
+export interface EventsInfo {
+    date: string;
+    title: string;
+    dateTime: string;
+    price: string;
+    image: string;
+    description: string;
+    eventDetails: EventsDetails;
+}
+
+export interface EventsDetails {
+    title: string;
+    date: string;
+    time: string;
+    venue: string;
+    address: string;
+    organizerName: string;
+    phone: string;
+    email: string;
+}
+
+export interface YogaCoursesOffered {
+    id: number;
+    headingTitle: string;
+    headingDescription: string;
+    title: string;
+    description: string;
+    items: string[];
+    image: string;
+}
+
+export interface YogaWorkFlow {
+    title: string;
+    description: string;
+    workflows: YogaWorkFlowItem[];
+}
+
+export interface YogaWorkFlowItem {
+    title: string;
+    image: string;
+    description: string;
+    leftSeparator: boolean;
+    rightSeparator: boolean;
+}
