@@ -7,22 +7,22 @@ import { StratergyInfo, HomeSectionInfo, UserTweets, SignUpInfo, YogaStatsDesc, 
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  images = [1, 2, 3].map((n) => `./assets/images/Carousel_${n}.JPG`);
+  images = [1, 2, 3, 4].map((n) => `./assets/images/Carousel_${n}.JPG`);
   homeInfo: StratergyInfo[] = [
     {
       icon: './assets/images/dummy_image.JPG',
-      title: 'Discover Possible',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+      title: 'STARTERS, MOVERS & FLYERS',
+      description: 'Everest Yoga deepens yoga knowledge by creating a bridge between your practice & needs. We categorize learners as starters, movers & flyers and train according to the needs.'
     },
     {
       icon: './assets/images/Carousel_1.JPG',
-      title: 'People Matter',
-      description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.'
+      title: 'UTHENTIC TRADITIONAL & MODERN',
+      description: 'Everest Yoga is an amalgamation of “Authentic Traditional Yoga” & “Modern Yoga”, inclined towards creating physical fitness, mental balance and spiritual elevation. (image of asana in traditional dress)'
     },
     {
       icon: './assets/images/Carousel_2.JPG',
-      title: 'Feeling Good',
-      description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden'
+      title: 'ONLINE & ONSITE',
+      description: 'We strive to touch maximum lives. Age & location are no bars. Our services are available onsite as well as online.'
     }
   ];
   latestTrends: HomeSectionInfo = {
@@ -33,21 +33,23 @@ export class HomeComponent implements OnInit {
         items: [
           {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
           {path: './assets/images/dummy_image.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_2.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
+          {path: './assets/images/Carousel_2.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
         ]
       },
       {
         items: [
           {path: './assets/images/dummy_image.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
           {path: './assets/images/Carousel_2.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
           {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
         ]
       }
     ]
   };
   spiritualGuide: HomeSectionInfo = {
-    title: 'Your Spiritual Guide',
-    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
+    title: 'Deepen your yoga knowledge with Everest Yoga',
+    description: ' Our Mission - “To create a Healthy & Happy World through Yogic Practices.”',
     categories: [
       {label: 'All', value: 'all'},
       {label: 'Hatha', value: 'hatha'},

@@ -66,3 +66,15 @@ body {
         }
     }
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('./assets/icons/arrow-left.svg');
+}
+.carousel-control-next-icon{
+    background-image: url('./assets/icons/arrow-right.svg');
+}

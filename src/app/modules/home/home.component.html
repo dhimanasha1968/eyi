@@ -2,29 +2,41 @@
     <ngb-carousel *ngIf="images">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random first slide" class="eyi-slider-images" />
+            <img [src]="images[0]" alt="first slide" class="eyi-slider-images" />
           </div>
-          <div class="carousel-caption">
-            <h3 class="text-white">First slide label</h3>
-            <p class="text-white">This is first slide</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[1]" alt="Random second slide" class="eyi-slider-images" />
-          </div>
-          <div class="carousel-caption text-white">
-            <h3 class="text-white">Second slide label</h3>
-            <p class="text-white">This is second slide</p>
+          <div class="eyi-carousel-caption carousel-caption">
+            <h3 class="text-white eyi-carousel-caption-title">अथ योगानुशासनम्</h3>
+            <p class="text-white eyi-carousel-caption-description">
+              Start your CAREER JOURNEY with Everest's PROFESSIONAL YOGA TEACHER TRAINING (ONLINE & ONSITE)
+            </p>
           </div>
         </ng-template>
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <img [src]="images[2]" alt="Random third slide" class="eyi-slider-images" />
+            <img [src]="images[1]" alt="second slide" class="eyi-slider-images" />
           </div>
-          <div class="carousel-caption text-white">
-            <h3 class="text-white">Third slide label</h3>
-            <p class="text-white">This is third slide</p>
+          <div class="eyi-carousel-caption carousel-caption text-white">
+            <h3 class="text-white eyi-carousel-caption-title">स्थिर-सुखम् आसनम्</h3>
+            <p class="text-white eyi-carousel-caption-description">EVEREST’S THERAPEUTIC YOGA - Heal & Feel</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="third slide" class="eyi-slider-images" />
+          </div>
+          <div class="eyi-carousel-caption carousel-caption text-white">
+            <h3 class="text-white eyi-carousel-caption-title">विशोका वा ज्योतिष्मती</h3>
+            <p class="text-white eyi-carousel-caption-description">EVEREST’S KID’S YOGA - ADAPTIVE & EFFICIENT</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]" alt="forth slide" class="eyi-slider-images" />
+          </div>
+          <div class="eyi-carousel-caption carousel-caption text-white">
+            <h3 class="text-white eyi-carousel-caption-title">योगश्चित्तवृत्तिनिरोधः</h3>
+            <p class="text-white eyi-carousel-caption-description">SITUATIONAL AWARENESS through our GROUP YOGA CLASSES (ONLINE & ONSITE)
+            </p>
           </div>
         </ng-template>
     </ngb-carousel>

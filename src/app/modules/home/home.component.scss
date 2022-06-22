@@ -1,4 +1,5 @@
 @import '../../../assets/styles/color-codes';
+@import '../../../assets/styles/typography';
 
 :host {
     .eyi-slider-images {
@@ -8,5 +9,27 @@
 
     .eyi-moto {
         background-color: $eyi-secondary-bg;
+    }
+
+    .eyi-carousel-caption {
+        align-items: center;
+        bottom: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        left: 0;
+        padding: 0;
+        right: auto;
+        top: 0;
+        width: 100%;
+        
+        .eyi-carousel-caption-title {
+            font-size: $eyi-font-size-xxxxl;
+        }
+
+        .eyi-carousel-caption-description {
+            font-size: $eyi-font-size-xxxl;
+        }
     }
 }
