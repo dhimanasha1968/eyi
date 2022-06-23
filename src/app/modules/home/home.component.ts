@@ -51,6 +51,7 @@ export class HomeComponent implements OnInit {
     title: 'Deepen your yoga knowledge with Everest Yoga',
     description: ' Our Mission - “To create a Healthy & Happy World through Yogic Practices.”',
     categories: [
+      {label: 'All', value: 'all'},
       {label: 'Adaptive & Efficient', value: 'adaptiveEfficient'},
       {label: 'Situational Awareness', value: 'situationalAwareness'},
       {label: 'Career Centered Courses', value: 'careerCenteredCourses'},

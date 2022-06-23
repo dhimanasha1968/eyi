@@ -9,15 +9,17 @@
         </div>
         <ng-container *ngIf="homeSectionInfo.categories">
             <ul class="eyi-home-section-categories d-flex justify-content-center">
-                <li class="float-start cursor-pointer p-4 text-uppercase eyi-home-section-category" *ngFor="let cat of homeSectionInfo.categories">
-                    {{cat.label}}
-                </li>
+                <ng-container *ngFor="let cat of homeSectionInfo.categories">
+                    <li class="float-start cursor-pointer p-4 text-uppercase eyi-home-section-category" (click)="filterCategories(cat.value)">
+                        {{cat.label}}
+                    </li>
+                </ng-container>
             </ul>
         </ng-container>
     </div>
-    <ng-container *ngIf="homeSectionInfo.images">
+    <ng-container *ngIf="images && images.length">
         <eyi-home-section-images
-            [images]="homeSectionInfo.images"
+            [images]="images"
             [hoverMode]="homeSectionInfo.hoverMode!"
             [gutterSize]="homeSectionInfo.gutterSize!"
             [columnSize]="homeSectionInfo.columnSize ? homeSectionInfo.columnSize : 3"

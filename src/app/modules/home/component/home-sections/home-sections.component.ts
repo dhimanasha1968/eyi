@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HomeSectionInfo } from '../../../../core/models';
+import { HomeSectionInfo, HomeSectionInfoImages } from '../../../../core/models';
 
 @Component({
   selector: 'eyi-home-sections',
@@ -9,10 +9,17 @@ import { HomeSectionInfo } from '../../../../core/models';
 export class HomeSectionsComponent implements OnInit {
   @Input() homeSectionInfo!: HomeSectionInfo;
 
+  images: HomeSectionInfoImages[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log('homeSectionInfo', this.homeSectionInfo)
+    this.images = this.homeSectionInfo.images!;
   }
 
+  filterCategories(cat: string): void {
+    this.images = cat === 'all' ? this.homeSectionInfo.images! : this.homeSectionInfo.images!.filter((img: HomeSectionInfoImages) => {
+      return img.category === cat;
+    });
+  }
 }
