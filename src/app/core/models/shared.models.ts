@@ -62,6 +62,7 @@ export interface HomeSectionInfoImages {
     category?: string;
     description?: string;
     socialInfo?: string;
+    label?: string;
 }
 
 export interface YogaStats {

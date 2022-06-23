@@ -25,24 +25,24 @@ export class HomeComponent implements OnInit {
       description: 'We strive to touch maximum lives. Age & location are no bars. Our services are available onsite as well as online.'
     }
   ];
-  latestTrends: HomeSectionInfo = {
-    title: 'Latest Yoga Trends',
-    description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
+  chooseClass: HomeSectionInfo = {
+    title: 'CHOOSE FROM OUR COURSES',
+    description: 'Create your career journey with us. On a professional level, you can specialize in any one or more of the courses.',
     carouselItems: [
       {
         items: [
-          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/dummy_image.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_2.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
+          {path: './assets/images/Carousel_1.JPG', title: 'RAJ YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/dummy_image.JPG', title: 'HATHA YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_2.JPG', title: 'ASHTANGA YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
         ]
       },
       {
         items: [
-          {path: './assets/images/dummy_image.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_2.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'Discover Possible', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
+          {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_1.JPG', title: 'MULTISTYLE YOGA COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
+          {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
         ]
       }
     ]
@@ -51,34 +51,35 @@ export class HomeComponent implements OnInit {
     title: 'Deepen your yoga knowledge with Everest Yoga',
     description: ' Our Mission - “To create a Healthy & Happy World through Yogic Practices.”',
     categories: [
-      {label: 'All', value: 'all'},
-      {label: 'Hatha', value: 'hatha'},
-      {label: 'Pilates', value: 'pilates'},
-      {label: 'Yoga', value: 'yoga'}
+      {label: 'Adaptive & Efficient', value: 'adaptiveEfficient'},
+      {label: 'Situational Awareness', value: 'situationalAwareness'},
+      {label: 'Career Centered Courses', value: 'careerCenteredCourses'},
+      {label: 'Heal & Feel', value: 'healFeal'}
     ],
     images: [
-      {path: './assets/images/Carousel_2.JPG', title: 'Exercise', category: 'hatha'},
-      {path: './assets/images/dummy_image.JPG', title: 'Habbit', category: 'pilates'},
-      {path: './assets/images/Carousel_2.JPG', title: 'Yoga Pose', category: 'hatha'},
-      {path: './assets/images/Carousel_1.JPG', title: 'Learning', category: 'pilates'},
-      {path: './assets/images/dummy_image.JPG', title: 'Time', category: 'yoga'},
-      {path: './assets/images/Carousel_2.JPG', title: 'Peace', category: 'yoga'},
-      {path: './assets/images/dummy_image.JPG', title: 'Focus', category: 'hatha'},
-      {path: './assets/images/Carousel_1.JPG', title: 'Practice', category: 'yoga'}
+      {path: './assets/images/Carousel_2.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/dummy_image.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/Carousel_2.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness',label: 'Situational Awareness'},
+      {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/dummy_image.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness', label: 'Situational Awareness'},
+      {path: './assets/images/Carousel_2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'},
+      {path: './assets/images/dummy_image.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/Carousel_1.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'}
     ],
     hoverMode: true
   };
-  chooseClass: HomeSectionInfo = {
-    title: 'Choose The Class For You',
+  latestTrends: HomeSectionInfo = {
+    title: 'Latest Yoga Trends',
     description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
     images: [
-      {path: './assets/images/dummy_image.JPG', title: 'Exercise', description: 'There are many variations of passages of Lorem have suffered alteration in some form'},
-      {path: './assets/images/Carousel_1.JPG', title: 'Habbit', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
-      {path: './assets/images/Carousel_2.JPG', title: 'Yoga Pose', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'}
+      {path: './assets/images/dummy_image.JPG', title: 'YOGA RETREATS & ADVENTURE CAMPS', description: 'There are many variations of passages of Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_1.JPG', title: 'CORPORATE YOGA PROGRAMS', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_2.JPG', title: 'PHYSIO YOGA', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_3.JPG', title: 'ARTISTIC, RHYTHMIC, PYRAMIDS, TRIO', description: 'There are many variations of passages of Lorem have suffered alteration in some form'}
     ],
     hoverMode: false,
     gutterSize: 10,
-    columnSize: 4
+    columnSize: 3
   };
   yogaDescription: YogaStatsDesc = {
     title: 'Yoga enhances your life',
