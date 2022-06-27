@@ -58,14 +58,14 @@ export class HomeComponent implements OnInit {
       {label: 'Heal & Feel', value: 'healFeal'}
     ],
     images: [
-      {path: './assets/images/Carousel_2.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
-      {path: './assets/images/dummy_image.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
-      {path: './assets/images/Carousel_2.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness',label: 'Situational Awareness'},
-      {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
-      {path: './assets/images/dummy_image.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness', label: 'Situational Awareness'},
-      {path: './assets/images/Carousel_2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'},
-      {path: './assets/images/dummy_image.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
-      {path: './assets/images/Carousel_1.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'}
+      {path: './assets/images/gallery-1.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/gallery-1.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness',label: 'Situational Awareness'},
+      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/gallery-1.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness', label: 'Situational Awareness'},
+      {path: './assets/images/gallery-2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'},
+      {path: './assets/images/gallery-1.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/gallery-2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'}
     ],
     hoverMode: true
   };
@@ -114,11 +114,14 @@ export class HomeComponent implements OnInit {
       {city: 'London', phone: '+1 656 656 5656', email: 'test@eyi.com', address: 'xyz street'},
       {city: 'Cape Town', phone: '+1 656 656 5656', email: 'test@eyi.com', address: 'xyz street'}
     ]
-  }
+  };
+
+  test = false;
+
+ 
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

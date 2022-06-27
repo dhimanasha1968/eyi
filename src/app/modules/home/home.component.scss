@@ -7,6 +7,35 @@
         width: 100%;
     }
 
+    .eyi-slide-wrapper {
+        &:hover {
+            .eyi-image-slider-design-left,
+            .eyi-image-slider-design-right {
+                transition: 1s;
+            }
+
+            .eyi-image-slider-design-left {
+                left: 0;
+            }
+
+            .eyi-image-slider-design-right {
+                right: 0;
+            }
+        }
+    }
+
+    .eyi-image-slider-design-left {
+        left: -400px;
+        width: 400px;
+        transition: 1s;
+    }
+
+    .eyi-image-slider-design-right {
+        right: -400px;
+        width: 400px;
+        transition: 1s;
+    }
+
     .eyi-moto {
         background-color: $eyi-secondary-bg;
     }
