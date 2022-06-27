@@ -5,7 +5,9 @@
     <div class="eyi-home-section text-center pt-3">
         <h2 class="text-uppercase pt-3">{{homeSectionInfo.title}}</h2>
         <div class="eyi-home-section-description w-50 m-auto text-secondary py-3">
-            {{homeSectionInfo.description}}
+            <div>{{homeSectionInfo.description}}</div>
+            <div *ngIf="homeSectionInfo.subDescription1">{{homeSectionInfo.subDescription1}}</div>
+            <div *ngIf="homeSectionInfo.subDescription2">{{homeSectionInfo.subDescription2}}</div>
         </div>
         <ng-container *ngIf="homeSectionInfo.categories">
             <ul class="eyi-home-section-categories d-flex justify-content-center">

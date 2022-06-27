@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     },
     {
       icon: './assets/images/Carousel_1.JPG',
-      title: 'UTHENTIC TRADITIONAL & MODERN',
+      title: 'AUTHENTIC TRADITIONAL & MODERN',
       description: 'Everest Yoga is an amalgamation of “Authentic Traditional Yoga” & “Modern Yoga”, inclined towards creating physical fitness, mental balance and spiritual elevation. (image of asana in traditional dress)'
     },
     {
@@ -27,7 +27,8 @@ export class HomeComponent implements OnInit {
   ];
   chooseClass: HomeSectionInfo = {
     title: 'CHOOSE FROM OUR COURSES',
-    description: 'Create your career journey with us. On a professional level, you can specialize in any one or more of the courses.',
+    description: 'Minimum Age to join the courses: 12 years',
+    subDescription1: 'Location: No bar. We are Onsite & Online',
     carouselItems: [
       {
         items: [
@@ -49,7 +50,9 @@ export class HomeComponent implements OnInit {
   };
   spiritualGuide: HomeSectionInfo = {
     title: 'Deepen your yoga knowledge with Everest Yoga',
-    description: ' Our Mission - “To create a Healthy & Happy World through Yogic Practices.”',
+    description: 'Age & Location - No Bars',
+    subDescription1: 'We have something for all age groups.',
+    subDescription2: 'You can join us ONSITE or ONLINE from the comforts of your home.',
     categories: [
       {label: 'All', value: 'all'},
       {label: 'Adaptive & Efficient', value: 'adaptiveEfficient'},
@@ -70,13 +73,15 @@ export class HomeComponent implements OnInit {
     hoverMode: true
   };
   latestTrends: HomeSectionInfo = {
-    title: 'Latest Yoga Trends',
+    title: 'OUR LATEST YOGA TRENDS',
     description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.',
     images: [
       {path: './assets/images/dummy_image.JPG', title: 'YOGA RETREATS & ADVENTURE CAMPS', description: 'There are many variations of passages of Lorem have suffered alteration in some form'},
       {path: './assets/images/Carousel_1.JPG', title: 'CORPORATE YOGA PROGRAMS', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
-      {path: './assets/images/Carousel_2.JPG', title: 'PHYSIO YOGA', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
-      {path: './assets/images/Carousel_3.JPG', title: 'ARTISTIC, RHYTHMIC, PYRAMIDS, TRIO', description: 'There are many variations of passages of Lorem have suffered alteration in some form'}
+      {path: './assets/images/Carousel_2.JPG', title: 'YOGA CHAMPIONSHIPS', description: 'There are many variations of passages of  Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_3.JPG', title: 'ARTISTIC & RHYTHMIC YOGA', description: 'There are many variations of passages of Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_1.JPG', title: 'PYRAMIDS & TRIO', description: 'There are many variations of passages of Lorem have suffered alteration in some form'},
+      {path: './assets/images/Carousel_2.JPG', title: 'PHYSIO YOGA', description: 'There are many variations of passages of Lorem have suffered alteration in some form'}
     ],
     hoverMode: false,
     gutterSize: 10,

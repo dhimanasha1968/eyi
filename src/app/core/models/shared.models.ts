@@ -48,6 +48,8 @@ export interface CarouselItems {
 export interface HomeSectionInfo {
     title: string;
     description: string;
+    subDescription1?: string;
+    subDescription2?: string;
     categories?: HomeSectionCategories[]
     images?: HomeSectionInfoImages[];
     hoverMode?: boolean;
