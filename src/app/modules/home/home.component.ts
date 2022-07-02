@@ -7,7 +7,7 @@ import { StratergyInfo, HomeSectionInfo, UserTweets, SignUpInfo, YogaStatsDesc, 
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  images = [1, 2, 3, 4].map((n) => `./assets/images/Carousel_${n}.JPG`);
+  images = [1, 2, 3, 4].map((n) => `./assets/images/Slider_${n}.jpg`);
   homeInfo: StratergyInfo[] = [
     {
       icon: './assets/images/dummy_image.JPG',
@@ -29,24 +29,19 @@ export class HomeComponent implements OnInit {
     title: 'CHOOSE FROM OUR COURSES',
     description: 'Minimum Age to join the courses: 12 years',
     subDescription1: 'Location: No bar. We are Onsite & Online',
-    carouselItems: [
-      {
-        items: [
-          {path: './assets/images/Carousel_1.JPG', title: 'RAJ YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/dummy_image.JPG', title: 'HATHA YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_2.JPG', title: 'ASHTANGA YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
-        ]
-      },
-      {
-        items: [
-          {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'MULTISTYLE YOGA COURSE', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' },
-          {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', socialInfo: 'Spirituality' }
-        ]
-      }
-    ]
+    images: [
+      {path: './assets/images/Carousel_1.JPG', title: 'RAJ YOGA', socialInfo: 'Spirituality' },
+      {path: './assets/images/dummy_image.JPG', title: 'HATHA YOGA', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_2.JPG', title: 'ASHTANGA YOGA', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', socialInfo: 'Spirituality' },
+      {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_1.JPG', title: 'MULTISTYLE YOGA COURSE', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING', socialInfo: 'Spirituality' }
+    ],
+    hoverMode: false,
+    marginGutterSize: 10,
+    columnSize: 3
   };
   spiritualGuide: HomeSectionInfo = {
     title: 'Deepen your yoga knowledge with Everest Yoga',

@@ -56,6 +56,7 @@ export interface HomeSectionInfo {
     gutterSize?: number;
     columnSize?: number;
     carouselItems?: CarouselItems[];
+    marginGutterSize?: number;
 }
 
 export interface HomeSectionInfoImages {

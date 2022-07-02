@@ -13,11 +13,11 @@
             <ng-container *ngIf="!hoverMode">
                 <div class="eyi-home-section-info" [ngClass]="{'px-4': marginGutterSize}">
                     <h4 class="text-uppercase py-4 m-0">{{img.title}}</h4>
-                    <div class="text-capitalize text-secondary pb-4">
+                    <div class="text-capitalize text-secondary pb-4" *ngIf="img.description">
                         {{img.description}}
                     </div>
                     <div *ngIf="img.socialInfo" class="d-flex py-3 eyi-social-info">
-                        <div class="flex-grow-1">
+                        <div class="flex-grow-1 d-flex align-items-baseline">
                             <i class="fa-solid fa-circle text-primary"></i>
                             <span class="ms-2 eyi-social-info-label">{{img.socialInfo}}</span>
                         </div>

@@ -4,7 +4,9 @@
           <div class="eyi-slide-wrapper">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
-              <img [src]="images[0]" alt="first slide" class="eyi-slider-images" />
+              <div class="eyi-slider-image-wrapper">
+                <img [src]="images[0]" alt="first slide" class="eyi-slider-images" />
+              </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
             <div class="eyi-carousel-caption carousel-caption">
@@ -17,9 +19,11 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper">
-            <div class="picsum-img-wrapper">
+            <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
-              <img [src]="images[1]" alt="second slide" class="eyi-slider-images" />
+              <div class="eyi-slider-image-wrapper">
+                <img [src]="images[1]" alt="second slide" class="eyi-slider-images" />
+              </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
             <div class="eyi-carousel-caption carousel-caption text-white">
@@ -30,9 +34,11 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper">
-            <div class="picsum-img-wrapper">
+            <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
-              <img [src]="images[2]" alt="third slide" class="eyi-slider-images" />
+              <div class="eyi-slider-image-wrapper">
+                <img [src]="images[2]" alt="third slide" class="eyi-slider-images" />
+              </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
             <div class="eyi-carousel-caption carousel-caption text-white">
@@ -43,9 +49,11 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper">
-            <div class="picsum-img-wrapper">
+            <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
-              <img [src]="'./assets/images/Carousel_4.jpg'" alt="forth slide" class="eyi-slider-images" />
+              <div class="eyi-slider-image-wrapper">
+                <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" />
+              </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
             <div class="eyi-carousel-caption carousel-caption text-white">
