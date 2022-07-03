@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header.component';
 import { LatestNewsComponent } from './components/latest-news/latest-news.component';
 
@@ -9,7 +10,8 @@ import { LatestNewsComponent } from './components/latest-news/latest-news.compon
     LatestNewsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbDropdownModule
   ],
   exports: [
     HeaderComponent,

@@ -24,7 +24,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
     },
     {
       path: '/yoga-courses',
-      title: 'Yoga Courses'
+      title: 'Yoga Courses',
+      subMenu: [
+        { path: '/yoga-courses', title: 'Course 1'},
+        { path: '/yoga-courses', title: 'Course 2'}
+      ]
     },
     {
       path: '/gallery',
@@ -36,6 +40,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
   ];
   isResponsiveMenuExpanded = false;
+  toggleSubMenu = false;
   headerContent: HeaderContent = {
     sideDrawerTitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     sideDrawerImages: [
@@ -92,5 +97,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   changeRoute(route: string): void {
     this.route.navigate([route]);
     this.isResponsiveMenuExpanded = false;
+  }
+
+  onOpenSubMenu(): void {
+    this.toggleSubMenu = !this.toggleSubMenu;
   }
 }

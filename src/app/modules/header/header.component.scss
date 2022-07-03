@@ -8,6 +8,20 @@
     header {
         z-index: 2;
 
+        .eyi-dropdown-menu {
+            margin-top: -10px !important;
+            
+            .eyi-submenu-item {
+                background: none;
+                transition: all .35s cubic-bezier(.61,.92,0,.21);
+    
+                &:hover {
+                    color: $eyi-primary;
+                    transform: translate3d(2px, 0, 0);
+                }
+            }    
+        }
+
         .eyi-logo {
             height: $eyi-size-75x;
             width: $eyi-size-75x;
@@ -79,6 +93,23 @@
                 }
                 &:hover {
                     color: $eyi-primary;
+                }
+            }
+
+            .eyi-responsive-sub-menu-wrapper {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.15s ease-out;
+
+                &.active {
+                    max-height: $eyi-size-200x;
+                }
+            }
+
+            .eyi-responsive-sub-menu {
+                border-bottom: $eyi-size-1x solid $eyi-light-gray;
+                &.eyi-responsive-sub-menu-last-item {
+                    border-bottom: none;
                 }
             }
         }
