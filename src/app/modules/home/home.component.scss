@@ -4,7 +4,7 @@
 
 :host {
     .picsum-img-wrapper {
-        height: 100vh;   
+        height: 100vh;
     }
 
     .eyi-slider-image-wrapper {
@@ -64,6 +64,8 @@
         right: auto;
         top: 0;
         width: 100%;
+        background: $eyi-black;
+        opacity: 0.6;
         
         .eyi-carousel-caption-title {
             font-size: $eyi-font-size-xxxxl;
