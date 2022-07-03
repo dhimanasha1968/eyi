@@ -21,9 +21,7 @@
                         </div>
                     </ng-template>
                     <ng-template ngbPanelContent>
-                        <span class="text-secondary">
-                            {{faq.description}}
-                        </span>
+                        <div class="text-secondary" [innerHTML]="faq.description"></div>
                     </ng-template>
                   </ngb-panel>
             </ng-container>

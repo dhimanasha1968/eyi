@@ -26,18 +26,19 @@
             // box-shadow: 0 $eyi-size-4x $eyi-size-8x 0 rgba(0,0,0,0.2);
 
             .eyi-flip-card-front,
-            .eyi-flip-card-back {
-                align-items: center;
+            .eyi-flip-card-back { 
                 backface-visibility: hidden;
                 display: flex;
                 flex-direction: column;
                 height: 100%;
-                justify-content: center;
+                
                 position: absolute;
                 width: 100%;
             }
 
             .eyi-flip-card-front {
+                align-items: center;
+                justify-content: center;
                 background-color: $eyi-white;
 
                 .eyi-user-image {
@@ -49,7 +50,12 @@
               
             .eyi-flip-card-back {
                 background-color: $eyi-primary;
-                transform: rotateY(180deg);
+                transform: rotateY(180deg); 
+                overflow: auto;
+
+                .eyi-about-back-desc {
+                    border-top: $eyi-size-1x solid $eyi-white;
+                }
             }
         }
 

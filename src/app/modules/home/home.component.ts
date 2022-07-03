@@ -7,6 +7,7 @@ import { StratergyInfo, HomeSectionInfo, UserTweets, SignUpInfo, YogaStatsDesc, 
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  mission = 'Our Mission - "To create a Healthy & Happy World through Yogic Practices."';
   images = [1, 2, 3, 4].map((n) => `./assets/images/Slider_${n}.jpg`);
   homeInfo: StratergyInfo[] = [
     {
@@ -56,13 +57,13 @@ export class HomeComponent implements OnInit {
       {label: 'Heal & Feel', value: 'healFeal'}
     ],
     images: [
-      {path: './assets/images/gallery-1.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
-      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/gallery-1.JPG', title: 'THERAPEUTIC YOGA (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
       {path: './assets/images/gallery-1.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness',label: 'Situational Awareness'},
-      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING  (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
-      {path: './assets/images/gallery-1.JPG', title: 'GROUP YOGA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness', label: 'Situational Awareness'},
+      {path: './assets/images/gallery-2.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING (ONLINE & ONSITE)', category: 'careerCenteredCourses', label: 'Career Centered Courses'},
+      {path: './assets/images/gallery-1.JPG', title: 'SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'situationalAwareness', label: 'Situational Awareness'},
       {path: './assets/images/gallery-2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'},
-      {path: './assets/images/gallery-1.JPG', title: 'THERAPEUTIC YOGA, MEDITATION & SHATKARMA CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
+      {path: './assets/images/gallery-1.JPG', title: 'MEDITATION CLASSES (ONLINE & ONSITE)', category: 'healFeal', label: 'Heal & Feel'},
       {path: './assets/images/gallery-2.JPG', title: 'KID\'S YOGA CLASSES (ONLINE & ONSITE)', category: 'adaptiveEfficient', label: 'Adaptive & Efficient'}
     ],
     hoverMode: true

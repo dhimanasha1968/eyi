@@ -26,8 +26,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
       path: '/yoga-courses',
       title: 'Yoga Courses',
       subMenu: [
-        { path: '/yoga-courses', title: 'Course 1'},
-        { path: '/yoga-courses', title: 'Course 2'}
+        { path: '/yoga-courses', title: 'Raj Yoga'},
+        { path: '/yoga-courses', title: 'Hatha Yoga'},
+        { path: '/yoga-courses', title: 'Ashtanga Yoga'},
+        { path: '/yoga-courses', title: 'Prop Yoga'},
+        { path: '/yoga-courses', title: 'Prenatal Yoga'},
+        { path: '/yoga-courses', title: 'Advance Asanas'},
+        { path: '/yoga-courses', title: 'Multistyle Yoga'},
+        { path: '/yoga-courses', title: 'Professional Yoga Teacher Training'}
       ]
     },
     {

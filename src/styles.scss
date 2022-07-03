@@ -72,6 +72,12 @@ body {
     width: auto;
 }
 
+.eyi-about-section-wrapper {
+    .carousel-indicators [data-bs-target] {
+        background-color: $eyi-primary;
+    }
+}
+
 .carousel-control-prev-icon {
     background-image: url('./assets/icons/arrow-left.svg');
 }

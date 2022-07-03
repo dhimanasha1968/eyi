@@ -50,6 +50,8 @@ export interface HomeSectionInfo {
     description: string;
     subDescription1?: string;
     subDescription2?: string;
+    subDescription3?: string;
+    subDescription4?: string;
     categories?: HomeSectionCategories[]
     images?: HomeSectionInfoImages[];
     hoverMode?: boolean;
@@ -109,6 +111,8 @@ export interface AboutUserList {
     facebook: string;
     linkedIn: string;
     twitter: string;
+    education?: string[];
+    backDescription?: string;
 }
 
 export interface AboutCarouselItems {

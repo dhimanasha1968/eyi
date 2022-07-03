@@ -8,6 +8,12 @@
             <div>{{homeSectionInfo.description}}</div>
             <div *ngIf="homeSectionInfo.subDescription1">{{homeSectionInfo.subDescription1}}</div>
             <div *ngIf="homeSectionInfo.subDescription2">{{homeSectionInfo.subDescription2}}</div>
+            <div *ngIf="homeSectionInfo.subDescription3" class="pt-1">
+                <strong>{{homeSectionInfo.subDescription3}}</strong>
+            </div>
+            <div *ngIf="homeSectionInfo.subDescription4" class="pt-1">
+                <strong>{{homeSectionInfo.subDescription4}}</strong>
+            </div>
         </div>
         <ng-container *ngIf="homeSectionInfo.categories">
             <ul class="eyi-home-section-categories d-flex justify-content-center">
