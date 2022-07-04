@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap';
 import { StratergyInfo, HomeSectionInfo, UserTweets, SignUpInfo, YogaStatsDesc, ImageDetailsDescription } from '../../core/models';
+import { SliderOpacity } from './models';
 
 @Component({
   selector: 'eyi-home',
@@ -118,8 +119,7 @@ export class HomeComponent implements OnInit {
     ]
   };
 
-
-  sliderOpacity = {
+  sliderOpacity: SliderOpacity = {
     first: 0,
     second: 0,
     third: 0,
