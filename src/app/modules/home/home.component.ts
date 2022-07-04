@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap';
 import { StratergyInfo, HomeSectionInfo, UserTweets, SignUpInfo, YogaStatsDesc, ImageDetailsDescription } from '../../core/models';
 
 @Component({
@@ -117,12 +118,45 @@ export class HomeComponent implements OnInit {
     ]
   };
 
-  test = false;
 
- 
+  sliderOpacity = {
+    first: 0,
+    second: 0,
+    third: 0,
+    forth: 0
+  };
 
   constructor() { }
 
   ngOnInit(): void { }
+
+  onLoadImage(idx: number): void {
+    this.setOpacity(idx, 1);
+  }
+
+  onSlideChange(evt: NgbSlideEvent): void {
+    const prevIdx = evt.prev.split('ngb-slide-')[1];
+    this.setOpacity(Number(prevIdx), 0);
+    const currIdx = evt.current.split('ngb-slide-')[1];
+    this.setOpacity(Number(currIdx), 1);
+  }
+
+
+  private setOpacity(idx: number, opacity: number): void {
+    switch(idx) {
+      case 0:
+        this.sliderOpacity.first = opacity;
+        break;
+      case 1:
+        this.sliderOpacity.second = opacity;
+        break;
+      case 2:
+        this.sliderOpacity.third = opacity;
+        break;
+      case 3:
+        this.sliderOpacity.forth = opacity;
+        break;
+    }
+  }
 
 }

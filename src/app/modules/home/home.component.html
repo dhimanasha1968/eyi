@@ -1,11 +1,11 @@
 <div class="eyi-home-wrapper">
-    <ngb-carousel *ngIf="images">
+    <ngb-carousel *ngIf="images" (slide)="onSlideChange($event)">
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[0]" alt="first slide" class="eyi-slider-images" />
+                <img [src]="images[0]" alt="first slide" class="eyi-slider-images" (load)="onLoadImage(0)" [style.opacity]="sliderOpacity.first" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
@@ -22,7 +22,7 @@
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[1]" alt="second slide" class="eyi-slider-images" />
+                <img [src]="images[1]" alt="second slide" class="eyi-slider-images" (load)="onLoadImage(1)" [style.opacity]="sliderOpacity.second" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
@@ -37,7 +37,7 @@
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[2]" alt="third slide" class="eyi-slider-images" />
+                <img [src]="images[2]" alt="third slide" class="eyi-slider-images" (load)="onLoadImage(2)" [style.opacity]="sliderOpacity.third" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
@@ -52,7 +52,7 @@
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" />
+                <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" (load)="onLoadImage(3)" [style.opacity]="sliderOpacity.forth" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
