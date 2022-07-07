@@ -1,15 +1,15 @@
 <div class="eyi-home-wrapper">
-    <ngb-carousel *ngIf="images" (slide)="onSlideChange($event)">
+    <ngb-carousel *ngIf="images" (slide)="onSlideChange($event)" (slid)="onAfterSlideChange($event)" [pauseOnHover]="false">
         <ng-template ngbSlide>
-          <div class="eyi-slide-wrapper">
+          <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 0}">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[0]" alt="first slide" class="eyi-slider-images" (load)="onLoadImage(0)" [style.opacity]="sliderOpacity.first" />
+                <img [src]="images[0]" alt="first slide" class="eyi-slider-images" [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.first}" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption">
+            <div class="eyi-carousel-caption carousel-caption justify-content-end eyi-carousel-bottom">
               <h3 class="text-white eyi-carousel-caption-title">अथ योगानुशासनम्</h3>
               <p class="text-white eyi-carousel-caption-description">
                 Start your CAREER JOURNEY with Everest's PROFESSIONAL YOGA TEACHER TRAINING (ONLINE & ONSITE)
@@ -18,11 +18,11 @@
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <div class="eyi-slide-wrapper">
+          <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 1}">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[1]" alt="second slide" class="eyi-slider-images" (load)="onLoadImage(1)" [style.opacity]="sliderOpacity.second" />
+                <img [src]="images[1]" alt="second slide" class="eyi-slider-images"  [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.second}" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
@@ -33,26 +33,26 @@
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <div class="eyi-slide-wrapper">
+          <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 2}">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[2]" alt="third slide" class="eyi-slider-images" (load)="onLoadImage(2)" [style.opacity]="sliderOpacity.third" />
+                <img [src]="images[2]" alt="third slide" class="eyi-slider-images" [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.third}" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption text-white">
+            <div class="eyi-carousel-caption carousel-caption text-white justify-content-end eyi-carousel-bottom">
               <h3 class="text-white eyi-carousel-caption-title">विशोका वा ज्योतिष्मती</h3>
               <p class="text-white eyi-carousel-caption-description">EVEREST’S KID’S YOGA - ADAPTIVE & EFFICIENT</p>
             </div>
           </div>
         </ng-template>
         <ng-template ngbSlide>
-          <div class="eyi-slide-wrapper">
+          <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 3}">
             <div class="picsum-img-wrapper position-relative">
               <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
-                <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" (load)="onLoadImage(3)" [style.opacity]="sliderOpacity.forth" />
+                <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.forth}" />
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>

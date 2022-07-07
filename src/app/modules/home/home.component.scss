@@ -4,6 +4,7 @@
 
 :host {
     .picsum-img-wrapper {
+        background-color: $eyi-primary;
         height: 100vh;
     }
 
@@ -13,41 +14,50 @@
         top: -$eyi-size-100x;
     
         .eyi-slider-images {
-            transition: opacity 2s;
-            opacity: 0;
+            // transition: opacity 2s;
+            // opacity: 0;
             width: 100%;
+            transition: transform 2s;
+            transform: scaleX(0) scaleY(0);
+
+            &.eyi-slider-image-loaded {
+                transform: scaleX(1) scaleY(1);
+            }
         }
     }
 
     .eyi-slide-wrapper {
-        // &:hover {
-        //     .eyi-image-slider-design-left,
-        //     .eyi-image-slider-design-right {
-        //         transition: 1s;
-        //     }
+        &.active {
+            .eyi-image-slider-design-left,
+            .eyi-image-slider-design-right {
+                transition: 2s;
+                visibility: visible;
+                z-index: 1;
+            }
 
-        //     .eyi-image-slider-design-left {
-        //         left: 0;
-        //     }
+            .eyi-image-slider-design-left {
+                top: 0;
+            }
 
-        //     .eyi-image-slider-design-right {
-        //         right: 0;
-        //     }
-        // }
+            .eyi-image-slider-design-right {
+                bottom: 0;
+            }
+        }
     }
 
     .eyi-image-slider-design-left {
-        display: none;
-        left: -200px;
+        top: -200px;
         width: 200px;
-        transition: 1s;
+        transition: 2s;
+        visibility: hidden;
     }
 
     .eyi-image-slider-design-right {
-        display: none;
-        right: -200px;
+        bottom: -200px;
+        right: 0;
         width: 200px;
-        transition: 1s;
+        transition: 2s;
+        visibility: hidden;
     }
 
     .eyi-moto {
@@ -66,8 +76,10 @@
         right: auto;
         top: 0;
         width: 100%;
-        background: $eyi-black;
-        opacity: 0.6;
+
+        &.eyi-carousel-bottom {
+            padding-bottom: $eyi-size-100x;
+        }
         
         .eyi-carousel-caption-title {
             font-size: $eyi-font-size-xxxxl;

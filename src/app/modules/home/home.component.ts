@@ -125,10 +125,15 @@ export class HomeComponent implements OnInit {
     third: 0,
     forth: 0
   };
+  currentSlide!: number;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.currentSlide = 0;
+    }, 200);
+  }
 
   onLoadImage(idx: number): void {
     this.setOpacity(idx, 1);
@@ -139,6 +144,12 @@ export class HomeComponent implements OnInit {
     this.setOpacity(Number(prevIdx), 0);
     const currIdx = evt.current.split('ngb-slide-')[1];
     this.setOpacity(Number(currIdx), 1);
+    console.log('Number(currIdx)', Number(currIdx))
+  }
+
+  onAfterSlideChange(evt: NgbSlideEvent): void {
+    const currIdx = evt.current.split('ngb-slide-')[1];
+    this.currentSlide = Number(currIdx);
   }
 
 
