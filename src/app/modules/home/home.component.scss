@@ -76,6 +76,7 @@
         right: auto;
         top: 0;
         width: 100%;
+        z-index: 2;
 
         &.eyi-carousel-bottom {
             padding-bottom: $eyi-size-100x;
@@ -89,6 +90,15 @@
         .eyi-carousel-caption-description {
             font-size: $eyi-font-size-xxxl;
             text-shadow: $eyi-size-1x $eyi-size-1x $eyi-primary;
+        }
+    }
+
+    @media only screen and (max-width: 960px) {
+        .eyi-slider-image-wrapper {
+            top: 0;
+            .eyi-slider-images {
+                height: 100vh;
+            }
         }
     }
 }

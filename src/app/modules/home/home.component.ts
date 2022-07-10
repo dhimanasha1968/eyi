@@ -132,6 +132,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.currentSlide = 0;
+      this.setOpacity(0, 1);
     }, 200);
   }
 
