@@ -10,6 +10,7 @@ import { AboutSectionInfo } from '../../../../core/models';
 export class UsersListComponent implements OnInit {
   @ViewChild('carousel') carousel!: NgbCarousel;
   @Input() aboutSectionInfo!: AboutSectionInfo;
+  backgroundColors = ['#f7972f', '#1b73d9', '#555555', '#915e18'];
 
   constructor() { }
 

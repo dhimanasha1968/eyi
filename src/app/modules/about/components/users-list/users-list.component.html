@@ -9,7 +9,7 @@
         <ng-container *ngFor="let car of aboutSectionInfo.carouselItems">
             <ng-template ngbSlide>
                 <div class="row col-12 px-2">
-                    <div class="col-md-3 col-sm-12 py-4 d-flex justify-content-center" *ngFor="let usr of car.items">
+                    <div class="col-md-3 col-sm-12 py-4 d-flex justify-content-center" *ngFor="let usr of car.items; let i = index;">
                         <div class="eyi-flip-card">
                             <div class="eyi-flip-card-inner">
                               <div class="eyi-flip-card-front">
@@ -22,7 +22,7 @@
                                     {{usr.description}}
                                 </div>
                               </div>
-                              <div class="eyi-flip-card-back p-3">
+                              <div class="eyi-flip-card-back p-3" [style.background]="backgroundColors[(i%4)]">
                                 <div class="text-white pb-3">
                                     <div *ngFor="let edu of usr.education" class="text-start">
                                         <i>
@@ -33,21 +33,6 @@
                                 <div class="eyi-about-back-desc text-white text-start pt-3">
                                     {{usr.backDescription}}
                                 </div>
-                                <!-- <i class="fa-solid fa-message text-white"></i>
-                                <h6 class="text-uppercase text-white pt-4">Contact Me</h6>
-                                <span class="text-white pt-4">{{usr.mobile}}</span>
-                                <span class="text-white pt-2">{{usr.email}}</span>
-                                <span class="py-4">
-                                    <a [href]="usr.facebook" target="_blank">
-                                        <i class="fa-brands fa-facebook-f text-white cursor-pointer"></i>
-                                    </a>
-                                    <a [href]="usr.twitter" target="_blank">
-                                        <i class="fa-brands fa-twitter text-white ms-3 cursor-pointer"></i>
-                                    </a>
-                                    <a [href]="usr.linkedIn" target="_blank">
-                                        <i class="fa-brands fa-linkedin-in text-white ms-3 cursor-pointer"></i>
-                                    </a>
-                                </span> -->
                               </div>
                             </div>
                         </div>
