@@ -30,7 +30,7 @@
                                         </i>
                                     </div>
                                 </div>
-                                <div class="eyi-about-back-desc text-white text-start pt-3">
+                                <div class="text-white text-start pt-3" [ngClass]="{'eyi-about-back-desc': (usr.education && usr.education.length)}">
                                     {{usr.backDescription}}
                                 </div>
                               </div>

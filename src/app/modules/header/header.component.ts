@@ -9,6 +9,7 @@ import { HeaderContent, NavItems } from './models';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
+  companyName = 'Everest Yoga Institute';
   navItems: NavItems[] = [
     {
       path: '/home',
@@ -16,7 +17,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
     },
     {
       path: '/about',
-      title: 'About Us'
+      title: 'About Us',
+      subMenu: [
+        { path: '/about?cat=teachers', title: 'Amazing Teachers'},
+        { path: '/about?cat=heads', title: 'Our Center Heads'}
+      ],
+      isExpanded: false
     },
     {
       path: '/events',
@@ -34,7 +40,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
         { path: '/yoga-courses', title: 'Advance Asanas'},
         { path: '/yoga-courses', title: 'Multistyle Yoga'},
         { path: '/yoga-courses', title: 'Professional Yoga Teacher Training'}
-      ]
+      ],
+      isExpanded: false
     },
     {
       path: '/gallery',
@@ -46,7 +53,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
   ];
   isResponsiveMenuExpanded = false;
-  toggleSubMenu = false;
   headerContent: HeaderContent = {
     sideDrawerTitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     sideDrawerImages: [
@@ -101,11 +107,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   changeRoute(route: string): void {
-    this.route.navigate([route]);
+    this.route.navigateByUrl(route);
     this.isResponsiveMenuExpanded = false;
   }
 
-  onOpenSubMenu(): void {
-    this.toggleSubMenu = !this.toggleSubMenu;
+  onOpenSubMenu(nav: NavItems): void {
+    nav.isExpanded = !nav.isExpanded;
   }
 }

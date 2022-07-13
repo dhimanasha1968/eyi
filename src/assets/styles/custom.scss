@@ -1,3 +1,4 @@
+@import './typography';
 @import './variables';
 @import './color-codes';
 
@@ -21,6 +22,8 @@ h4,
 h5,
 h6 {
     color: $eyi-heading;
+    font-size: $eyi-font-size-xxxl;
+    font-weight: $eyi-font-weight-xl;
 }
 
 .text-widget {
@@ -29,4 +32,13 @@ h6 {
 
 .eyi-style-type-none {
     list-style-type: none;
+}
+
+.eyi-headings {
+    font-size: $eyi-font-size-xxxl;
+    font-weight: $eyi-font-weight-xl;
+}
+
+.eyi-descriptions-info {
+    color: $eyi-text-widget-color;
 }

@@ -33,9 +33,7 @@ export class HomeComponent implements OnInit {
     description: 'Minimum Age to join the courses: 12 years',
     subDescription1: 'Location: No bar. We are Onsite & Online',
     images: [
-      {path: './assets/images/Carousel_1.JPG', title: 'RAJ YOGA', socialInfo: 'Spirituality' },
-      {path: './assets/images/dummy_image.JPG', title: 'HATHA YOGA', socialInfo: 'Spirituality' },
-      {path: './assets/images/Carousel_2.JPG', title: 'ASHTANGA YOGA', socialInfo: 'Spirituality' },
+      {path: './assets/images/Carousel_2.JPG', title: 'TRADITIONAL YOGA', socialInfo: 'Spirituality' },
       {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', socialInfo: 'Spirituality' },
       {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', socialInfo: 'Spirituality' },
       {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', socialInfo: 'Spirituality' },
@@ -83,7 +81,7 @@ export class HomeComponent implements OnInit {
     ],
     hoverMode: false,
     gutterSize: 10,
-    columnSize: 3
+    columnSize: 4
   };
   yogaDescription: YogaStatsDesc = {
     title: 'Yoga enhances your life',
@@ -145,14 +143,12 @@ export class HomeComponent implements OnInit {
     this.setOpacity(Number(prevIdx), 0);
     const currIdx = evt.current.split('ngb-slide-')[1];
     this.setOpacity(Number(currIdx), 1);
-    console.log('Number(currIdx)', Number(currIdx))
   }
 
   onAfterSlideChange(evt: NgbSlideEvent): void {
     const currIdx = evt.current.split('ngb-slide-')[1];
     this.currentSlide = Number(currIdx);
   }
-
 
   private setOpacity(idx: number, opacity: number): void {
     switch(idx) {

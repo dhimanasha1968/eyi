@@ -2,6 +2,7 @@ export interface NavItems {
     path: string;
     title: string;
     subMenu?: NavItems[];
+    isExpanded?: boolean;
 }
 
 export interface LatestNews {

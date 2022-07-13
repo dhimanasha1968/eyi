@@ -7,6 +7,6 @@
         </div>
     </div> -->
     <eyi-desc-with-stats [description]="yogaDescription" [customizedBackground]="true"></eyi-desc-with-stats>
-    <eyi-users-list [aboutSectionInfo]="usersInfo"></eyi-users-list>
+    <eyi-users-list [aboutSectionInfo]="category === aboutCategory.TEACHER ? usersInfo : headsInfo"></eyi-users-list>
     <eyi-user-tweets  [tweets]="happyCustomers" title="Center Heads"></eyi-user-tweets>
 </div>
