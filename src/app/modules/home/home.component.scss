@@ -29,7 +29,9 @@
     .eyi-slide-wrapper {
         &.active {
             .eyi-image-slider-design-left,
-            .eyi-image-slider-design-right {
+            .eyi-image-slider-design-right,
+            .eyi-image-slider-design-top,
+            .eyi-image-slider-design-bottom {
                 transition: 2s;
                 visibility: visible;
                 z-index: 1;
@@ -42,7 +44,31 @@
             .eyi-image-slider-design-right {
                 bottom: 0;
             }
+
+            .eyi-image-slider-design-top {
+                left: 0;
+            }
+
+            .eyi-image-slider-design-bottom {
+                right: 0;
+            }
         }
+    }
+
+    .eyi-image-slider-design-top {
+        left: -200px;
+        width: 200px;
+        transition: 2s;
+        visibility: hidden;
+        bottom: 0;
+    }
+
+    .eyi-image-slider-design-bottom {
+        right: -200px;
+        width: 200px;
+        transition: 2s;
+        visibility: hidden;
+        bottom: 0;
     }
 
     .eyi-image-slider-design-left {
@@ -72,11 +98,20 @@
         height: 100vh;
         justify-content: center;
         left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear;
         padding: 0;
         right: auto;
         top: 0;
         width: 100%;
         z-index: 2;
+
+        &.eyi-active-caption {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 1s linear;
+        }
 
         &.eyi-carousel-bottom {
             padding-bottom: $eyi-size-100x;

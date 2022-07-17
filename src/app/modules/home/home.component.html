@@ -9,7 +9,7 @@
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption justify-content-end eyi-carousel-bottom">
+            <div class="eyi-carousel-caption carousel-caption justify-content-end eyi-carousel-bottom" [ngClass]="{'eyi-active-caption': currentSlide === 0}">
               <h3 class="text-white eyi-carousel-caption-title">अथ योगानुशासनम्</h3>
               <p class="text-white eyi-carousel-caption-description">
                 Start your CAREER JOURNEY with Everest's PROFESSIONAL YOGA TEACHER TRAINING (ONLINE & ONSITE)
@@ -20,13 +20,13 @@
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 1}">
             <div class="picsum-img-wrapper position-relative">
-              <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
+              <img class="position-absolute eyi-image-slider-design-top" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
                 <img [src]="images[1]" alt="second slide" class="eyi-slider-images"  [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.second}" />
               </div>
-              <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
+              <img class="position-absolute eyi-image-slider-design-bottom" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption text-white">
+            <div class="eyi-carousel-caption carousel-caption text-white" [ngClass]="{'eyi-active-caption': currentSlide === 1}">
               <h3 class="text-white eyi-carousel-caption-title">स्थिर-सुखम् आसनम्</h3>
               <p class="text-white eyi-carousel-caption-description">EVEREST’S THERAPEUTIC YOGA - Heal & Feel</p>
             </div>
@@ -41,7 +41,7 @@
               </div>
               <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption text-white justify-content-end eyi-carousel-bottom">
+            <div class="eyi-carousel-caption carousel-caption text-white justify-content-end eyi-carousel-bottom" [ngClass]="{'eyi-active-caption': currentSlide === 2}">
               <h3 class="text-white eyi-carousel-caption-title">विशोका वा ज्योतिष्मती</h3>
               <p class="text-white eyi-carousel-caption-description">EVEREST’S KID’S YOGA - ADAPTIVE & EFFICIENT</p>
             </div>
@@ -50,13 +50,13 @@
         <ng-template ngbSlide>
           <div class="eyi-slide-wrapper" [ngClass]="{'active': currentSlide === 3}">
             <div class="picsum-img-wrapper position-relative">
-              <img class="position-absolute eyi-image-slider-design-left" src="./assets/images/h1-slide-img-2.png" />
+              <img class="position-absolute eyi-image-slider-design-top" src="./assets/images/h1-slide-img-2.png" />
               <div class="eyi-slider-image-wrapper">
                 <img [src]="images[3]" alt="forth slide" class="eyi-slider-images" [ngClass]="{'eyi-slider-image-loaded': sliderOpacity.forth}" />
               </div>
-              <img class="position-absolute eyi-image-slider-design-right" src="./assets/images/h1-slide-img-3.png" />
+              <img class="position-absolute eyi-image-slider-design-bottom" src="./assets/images/h1-slide-img-3.png" />
             </div>
-            <div class="eyi-carousel-caption carousel-caption text-white">
+            <div class="eyi-carousel-caption carousel-caption text-white" [ngClass]="{'eyi-active-caption': currentSlide === 3}">
               <h3 class="text-white eyi-carousel-caption-title">योगश्चित्तवृत्तिनिरोधः</h3>
               <p class="text-white eyi-carousel-caption-description">SITUATIONAL AWARENESS through our GROUP YOGA CLASSES (ONLINE & ONSITE)
               </p>

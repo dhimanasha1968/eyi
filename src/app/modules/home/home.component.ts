@@ -33,16 +33,16 @@ export class HomeComponent implements OnInit {
     description: 'Minimum Age to join the courses: 12 years',
     subDescription1: 'Location: No bar. We are Onsite & Online',
     images: [
-      {path: './assets/images/Carousel_2.JPG', title: 'TRADITIONAL YOGA', socialInfo: 'Spirituality' },
-      {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', socialInfo: 'Spirituality' },
-      {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', socialInfo: 'Spirituality' },
-      {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', socialInfo: 'Spirituality' },
-      {path: './assets/images/Carousel_1.JPG', title: 'MULTISTYLE YOGA COURSE', socialInfo: 'Spirituality' },
-      {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING', socialInfo: 'Spirituality' }
+      {path: './assets/images/Carousel_2.JPG', title: 'TRADITIONAL YOGA', socialInfo: '' },
+      {path: './assets/images/Carousel_1.JPG', title: 'PROP YOGA', socialInfo: '' },
+      {path: './assets/images/dummy_image.JPG', title: 'PRENATAL YOGA COURSE', socialInfo: '' },
+      {path: './assets/images/Carousel_2.JPG', title: 'ADVANCE ASANAS COURSE', socialInfo: '' },
+      {path: './assets/images/Carousel_1.JPG', title: 'MULTISTYLE YOGA COURSE', socialInfo: '' },
+      {path: './assets/images/Carousel_1.JPG', title: 'PROFESSIONAL YOGA TEACHER TRAINING', socialInfo: '' }
     ],
     hoverMode: false,
     marginGutterSize: 10,
-    columnSize: 3
+    columnSize: 4
   };
   spiritualGuide: HomeSectionInfo = {
     title: 'Deepen your yoga knowledge with Everest Yoga',
